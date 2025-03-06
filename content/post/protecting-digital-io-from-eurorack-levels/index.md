@@ -5,7 +5,6 @@ date: 2025-03-06T15:33:17Z
 image: grids_input_protection.jpg
 categories:
     - Quick Tips
-draft: true
 ---
 Here are some circuits to help protect your precious microcontroller's inputs.
 
