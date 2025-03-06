@@ -3,7 +3,6 @@ title: "My Kicad Board Setup Settings"
 description: 
 date: 2025-03-06T18:01:11Z
 image: 1.png
-draft: true
 categories:
     - Quick Tips
 tags:
