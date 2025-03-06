@@ -3,11 +3,6 @@ title: "Protecting Digital IO From Eurorack Levels"
 description: So you want to design a module with Arduino or other low voltage digital devices and you don’t know how you’ll protect them.
 date: 2025-03-06T15:33:17Z
 image: cover.jpg
-math: 
-license: 
-hidden: false
-comments: true
-draft: true
 ---
 So you want to design a module with Arduino or other low voltage digital devices and you don’t know how you’ll protect them. Here’s some circuits to help you.
 
