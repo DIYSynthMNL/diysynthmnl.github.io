@@ -11,6 +11,7 @@ tags:
     - Oscillator
     - Analog
     - Electric Druid
+status: To build prototype, incomplete design notes
 ---
 
 ## Resources

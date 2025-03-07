@@ -12,6 +12,7 @@ tags:
     - Saturation
     - Effects
 weight: 1
+status: For revisions, incomplete design notes
 ---
 
 ![front](prototype_module_front.jpg) ![side](prototype_module_side.jpg)

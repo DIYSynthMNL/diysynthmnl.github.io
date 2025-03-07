@@ -12,6 +12,7 @@ tags:
     - Low Pass Filter
     - Analog
     - Electric Druid
+status: Prototype built, incomplete design notes
 ---
 
 ## Resources

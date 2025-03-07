@@ -11,6 +11,7 @@ tags:
     - Amplifier
     - Analog
     - Electric Druid
+status: Prototype built, incomplete design notes
 ---
 ## Designing the cv input circuit
 

@@ -12,6 +12,7 @@ tags:
     - Digital
     - Wavetable
     - Electric Druid
+status: Prototype built, incomplete design notes
 ---
 
 - [x] Draw schematic based on the datasheet

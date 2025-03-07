@@ -11,6 +11,7 @@ tags:
     - Amplifier
     - Analog
     - Electric Druid
+status: To build prototype, incomplete design notes
 ---
 
 ## Some background

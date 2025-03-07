@@ -10,6 +10,7 @@ tags:
     - Eurorack Rails
     - Case
     - Rails
+status: Built, incomplete design notes
 ---
 
 ## Dimensions

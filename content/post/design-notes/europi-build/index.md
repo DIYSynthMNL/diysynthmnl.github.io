@@ -3,7 +3,6 @@ title: "Europi Build"
 description: 
 date: 2024-01-15T12:11:43Z
 image: europi_front_no_panel.jpg
-status: Built
 categories:
     - Design Notes
 tags:
@@ -11,6 +10,7 @@ tags:
     - Pi Pico
     - Digital
     - Module
+status: Built, incomplete design notes
 ---
 
 ![Europi Built!](europi_front.jpg) ![Side View](europi_side.jpg)
