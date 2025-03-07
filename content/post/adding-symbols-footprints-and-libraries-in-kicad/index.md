@@ -1,7 +1,7 @@
 ---
 title: "Adding Symbols, Footprints, and Libraries in Kicad"
 description: 
-date: 2025-03-06T18:22:38Z
+date: 2023-12-23T00:00:00+08:00
 image: 
 categories:
     - Quick Tips

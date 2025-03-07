@@ -1,7 +1,7 @@
 ---
 title: "Powering Your Module"
 description: 
-date: 2025-03-06T17:21:32Z
+date: 2023-12-14T17:21:32Z
 categories:
     - Quick Tips
 image: eurorack_power_pinouts.png

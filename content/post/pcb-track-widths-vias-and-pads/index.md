@@ -1,7 +1,7 @@
 ---
 title: "Pcb Track Widths, Vias, and Pads"
 description: Recommended track widths on KiCad for PCBWay
-date: 2025-03-06T17:50:44Z
+date: 2023-12-23T00:00:00+08:00
 image: 
 categories:
     - Quick Tips

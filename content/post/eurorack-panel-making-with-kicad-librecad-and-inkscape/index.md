@@ -1,7 +1,7 @@
 ---
 title: "Eurorack Panel Making With KiCad, LibreCad, and Inkscape"
 description: 
-date: 2025-03-06T18:18:10Z
+date: 2023-12-27T00:00:00+08:00
 image: 
 categories:
     - Quick Tips

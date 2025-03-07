@@ -1,7 +1,7 @@
 ---
 title: "My Kicad Board Setup Settings"
 description: 
-date: 2025-03-06T18:01:11Z
+date: 2024-01-01T00:00:00+08:00
 image: 1.png
 categories:
     - Quick Tips

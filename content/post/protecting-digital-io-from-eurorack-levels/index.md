@@ -1,7 +1,7 @@
 ---
 title: Protecting Microcontroller Digital IO From Eurorack Levels
 description: So you want to design a module with Arduino or other low voltage digital devices and you don’t know how you’ll protect them. Here’s some circuits to help you.
-date: 2025-03-06T15:33:17Z
+date: 2023-12-14T00:00:00+08:00
 image: grids_input_protection.jpg
 categories:
     - Quick Tips
