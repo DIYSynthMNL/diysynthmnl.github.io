@@ -11,6 +11,7 @@ tags:
     - Distortion
     - Saturation
     - Effects
+weight: 1
 ---
 
 ![front](prototype_module_front.jpg) ![side](prototype_module_side.jpg)
