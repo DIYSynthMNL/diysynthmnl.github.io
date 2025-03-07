@@ -3,7 +3,6 @@ title: "Ladik R110 Clone"
 description: 
 date: 2023-12-13T10:13:27Z
 image: ladik_r-110_side.jpg
-draft: true
 categories:
     - Design Notes
 tags:

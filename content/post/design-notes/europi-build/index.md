@@ -10,6 +10,7 @@ tags:
     - Europi
     - Pi Pico
     - Digital
+    - Module
 ---
 
 ![Europi Built!](europi_front.jpg) ![Side View](europi_side.jpg)
