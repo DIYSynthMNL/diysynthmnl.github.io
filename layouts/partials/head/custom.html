@@ -1,0 +1,29 @@
+<style>
+    /* Overwrite CSS variable */
+    :root {
+        --article-font-family: "AlteHaasGrotesk", var(--base-font-family);
+    }
+</style>
+
+<script>
+    (function () {
+        const fontStyle = document.createElement('style');
+        fontStyle.innerHTML = `
+            @font-face {
+                font-family: 'AlteHaasGrotesk';
+                src: url('fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'AlteHaasGrotesk';
+                src: url('fonts/AlteHaasGroteskBold.ttf') format('truetype');
+                font-weight: bold;
+                font-style: normal;
+            }
+        `;
+        
+        document.head.appendChild(fontStyle);
+    }());
+</script>
