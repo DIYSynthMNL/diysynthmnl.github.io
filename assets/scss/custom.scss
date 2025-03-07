@@ -26,8 +26,56 @@
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* OverusedGrotesk Book*/
+@font-face {
+    font-family: 'OverusedGrotesk';
+    font-style: normal;
+    font-weight: normal;
+    src: local(''),
+        url('fonts/overused-grotesk/OverusedGrotesk-Roman.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/overused-grotesk/OverusedGrotesk-Roman.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* OverusedGrotesk Book Italic*/
+@font-face {
+    font-family: 'OverusedGrotesk';
+    font-style: italic;
+    font-weight: normal;
+    src: local(''),
+        url('fonts/overused-grotesk/OverusedGrotesk-BookItalic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/overused-grotesk/OverusedGrotesk-BookItalic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* OverusedGrotesk Bold*/
+@font-face {
+    font-family: 'OverusedGrotesk';
+    font-style: normal;
+    font-weight: bold;
+    src: local(''),
+        url('fonts/overused-grotesk/OverusedGrotesk-Bold.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/overused-grotesk/OverusedGrotesk-Bold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* OverusedGrotesk Bold Italic*/
+@font-face {
+    font-family: 'OverusedGrotesk';
+    font-style: italic;
+    font-weight: bold;
+    src: local(''),
+        url('fonts/overused-grotesk/OverusedGrotesk-BoldItalic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/overused-grotesk/OverusedGrotesk-BoldItalic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
-    font-family: 'AlteHaasGrotesk', sans-serif;
+    font-family: 'OverusedGrotesk', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
