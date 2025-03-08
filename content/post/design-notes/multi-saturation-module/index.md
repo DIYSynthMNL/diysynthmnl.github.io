@@ -11,7 +11,7 @@ tags:
     - Distortion
     - Saturation
     - Effects
-weight: 1
+weight: 10
 status: For revisions, incomplete design notes
 ---
 
