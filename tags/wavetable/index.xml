@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wavetable on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/wavetable/</link><description>Recent content in Wavetable on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Mar 2025 10:31:50 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/wavetable/index.xml" rel="self" type="application/rss+xml"/><item><title>Electric Druid VCDO</title><link>https://diysynthmnl.github.io/p/electric-druid-vcdo/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/electric-druid-vcdo/</guid><description>&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Draw schematic based on the datasheet&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Determine if the regulators need load resistors, I’ll put it in just in case&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Try to change the CV input op amps to MCP6004 compare both&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> TL074 will suffice&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add bitcrush CV in&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add glide CV in&lt;/li>
+&lt;/ul>
+&lt;h3 id="adding-cv-to-bitcrush-and-glide">Adding CV to bitcrush and glide
+&lt;/h3>&lt;p>The circuit below converts 10vpp +/-5v to 0-5v using a TL074 op amp&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_hu_1251f961bdf8ad95.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_hu_b7451ef7120bea2.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>The circuit below does the following. When you plug in a 10vpp signal, it will bypass RV14, the control pot. When there is nothing plugged in, you can control the parameter using the potentiometer.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2.png"
+width="1632"
+height="898"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_hu_3904d634a174fbb4.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_hu_3d6867c712016267.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_2"
+class="gallery-image"
+data-flex-grow="181"
+data-flex-basis="436px"
+>&lt;/p>
+&lt;p>The screenshot below is a simulation of the circuit above.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim_hu_48cb6763483cafe6.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim_hu_834986a2ea63641d.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_2_sim"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Take a look at the circuit from Electric Druid’s LFO. We wouldn&amp;rsquo;t need the circuit above.&lt;/li>
+&lt;/ul>
+&lt;p>A much better circuit for glide and bitcrush&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final.png"
+width="1689"
+height="961"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final_hu_6e40b2e002de2beb.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final_hu_535cc4fc686e97ce.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_final"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item></channel></rss>
