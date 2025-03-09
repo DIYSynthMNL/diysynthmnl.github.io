@@ -15,6 +15,8 @@ weight: 10
 status: For revisions, incomplete design notes
 ---
 
+[Module GitHub Link](https://github.com/DIYSynthMNL/Eurorack-Multi-Saturation-Module)
+
 ![front](prototype_module_front.jpg) ![side](prototype_module_side.jpg)
 
 ![back](prototype_module_back.jpg) ![back](prototype_module_back_close.jpg) ![back](proto_module_back.jpg)

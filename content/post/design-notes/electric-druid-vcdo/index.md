@@ -14,6 +14,7 @@ tags:
     - Electric Druid
 status: Prototype built, incomplete design notes
 ---
+[Module GitHub Link](https://github.com/DIYSynthMNL/Eurorack-Electric-Druid-VCDO1)
 
 - [x] Draw schematic based on the datasheet
 - [x] Determine if the regulators need load resistors, I’ll put it in just in case

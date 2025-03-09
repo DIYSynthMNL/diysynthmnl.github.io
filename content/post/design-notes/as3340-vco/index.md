@@ -14,6 +14,8 @@ tags:
 status: To build prototype, incomplete design notes
 ---
 
+[Module GitHub Link](https://github.com/DIYSynthMNL/Eurorack-3340-VCO)
+
 ## Resources
 
 - [Tri to sin using a JFET](https://www.timstinchcombe.co.uk/index.php?pge=trisin)

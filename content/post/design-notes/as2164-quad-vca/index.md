@@ -13,6 +13,8 @@ tags:
     - Electric Druid
 status: Prototype built, incomplete design notes
 ---
+[Module GitHub Repo](https://github.com/DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA)
+
 ## Designing the cv input circuit
 
 [https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2164.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2164.pdf)

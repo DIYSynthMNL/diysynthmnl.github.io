@@ -15,6 +15,8 @@ tags:
 status: Prototype built, incomplete design notes
 ---
 
+[Module GitHub Link](https://github.com/DIYSynthMNL/Eurorack-3320-VCF)
+
 ## Resources
 
 - [https://www.eddybergman.com/2020/03/synthesizer-build-part-23-digisound-80.html](https://www.eddybergman.com/2020/03/synthesizer-build-part-23-digisound-80.html)

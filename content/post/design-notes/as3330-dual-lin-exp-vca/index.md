@@ -14,6 +14,8 @@ tags:
 status: To build prototype, incomplete design notes
 ---
 
+[Module GitHub Repo](https://github.com/DIYSynthMNL/Eurorack-3330-Dual-Lin-Exp-VCA)
+
 ## Some background
 
 The AS3330 is a dual linear/exponential VCA.
@@ -34,7 +36,7 @@ Refer to the datasheet diagram which I have drawn for the commentary below. I to
 - 10Vpp
 - A current input
 - A summing node
-  - Uses 100K resistors to convert an input voltage into an input current
+- Uses 100K resistors to convert an input voltage into an input current
 - The Digisound 80-9 circuit added compensation resistor and cap. And a diode to prevent latch up problems.
 
 ### Signal outputs
