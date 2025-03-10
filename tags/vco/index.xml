@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VCO on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/vco/</link><description>Recent content in VCO on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Mar 2025 16:18:07 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/vco/index.xml" rel="self" type="application/rss+xml"/><item><title>Electric Druid VCDO</title><link>https://diysynthmnl.github.io/p/electric-druid-vcdo/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/electric-druid-vcdo/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/images/DSC06823.jpg" alt="Featured image of post Electric Druid VCDO" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-Electric-Druid-VCDO1" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Draw schematic based on the datasheet&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Determine if the regulators need load resistors, I’ll put it in just in case&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Try to change the CV input op amps to MCP6004 compare both&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> TL074 will suffice&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add bitcrush CV in&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add glide CV in&lt;/li>
+&lt;/ul>
+&lt;h3 id="adding-cv-to-bitcrush-and-glide">Adding CV to bitcrush and glide
+&lt;/h3>&lt;p>The circuit below converts 10vpp +/-5v to 0-5v using a TL074 op amp&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_hu_1251f961bdf8ad95.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_hu_b7451ef7120bea2.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>The circuit below does the following. When you plug in a 10vpp signal, it will bypass RV14, the control pot. When there is nothing plugged in, you can control the parameter using the potentiometer.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2.png"
+width="1632"
+height="898"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_hu_3904d634a174fbb4.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_hu_3d6867c712016267.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_2"
+class="gallery-image"
+data-flex-grow="181"
+data-flex-basis="436px"
+>&lt;/p>
+&lt;p>The screenshot below is a simulation of the circuit above.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim_hu_48cb6763483cafe6.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim_hu_834986a2ea63641d.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_2_sim"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Take a look at the circuit from Electric Druid’s LFO. We wouldn&amp;rsquo;t need the circuit above.&lt;/li>
+&lt;/ul>
+&lt;p>A much better circuit for glide and bitcrush&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final.png"
+width="1689"
+height="961"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final_hu_6e40b2e002de2beb.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final_hu_535cc4fc686e97ce.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_final"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item><item><title>AS3340 VCO</title><link>https://diysynthmnl.github.io/p/as3340-vco/</link><pubDate>Fri, 29 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/as3340-vco/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3340-VCO" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;h2 id="resources">Resources
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.timstinchcombe.co.uk/index.php?pge=trisin" target="_blank" rel="noopener"
+>Tri to sin using a JFET&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="http://www.alfarzpp.lv/eng/sc/AS3340.pdf" target="_blank" rel="noopener"
+>AS3340 Datasheet&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/" target="_blank" rel="noopener"
+>Electric Druid - 3340 VCO Designs&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://yusynth.net/Modular/EN/VCO/index.html" target="_blank" rel="noopener"
+>YuSynth VCO&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="as3340-chip-breakdown">AS3340 Chip breakdown
+&lt;/h2>&lt;h3 id="power-supply">Power Supply
+&lt;/h3>&lt;ul>
+&lt;li>Pins 16 (VCC Positive) and 3 (VEE negative)&lt;/li>
+&lt;li>CANNOT be powered with +/- 15V, +/-12V without protection&lt;/li>
+&lt;li>Voltage between VCC and VEE should be less than +24V&lt;/li>
+&lt;li>Voltage between VCC and GND should be less than +18V&lt;/li>
+&lt;li>Voltage between VEE and GND should be less than -6V
+&lt;ul>
+&lt;li>A current limiting resistor is used in the datasheet when powering it with -15V&lt;/li>
+&lt;li>You can power VEE with -5V without using a current limiting resistor&lt;/li>
+&lt;li>When powering VEE with -15V, use an 820R current limiting resistor&lt;/li>
+&lt;li>When powering VEE with -12V, use a 470R current limiting resistor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="sync">Sync
+&lt;/h3>&lt;ul>
+&lt;li>Pins 6 (Hard SYNC) and 9 (Soft SYNC)&lt;/li>
+&lt;/ul>
+&lt;h3 id="output-levels">Output Levels
+&lt;/h3>&lt;ul>
+&lt;li>Pins 4 (Pulse), 8 (Saw), and 10 (Triangle)&lt;/li>
+&lt;li>Ramp - 2/3rds of the positive supply&lt;/li>
+&lt;li>Triangle - 1/3rd of the positive supply&lt;/li>
+&lt;li>Pulse - positive supply minus 1.3V
+&lt;ul>
+&lt;li>Open emitter - requires a pulldown resistor to set the lower level&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>With a +15V supply
+&lt;ul>
+&lt;li>Ramp - 0 to 10V&lt;/li>
+&lt;li>Triangle - 0 to 5V&lt;/li>
+&lt;li>Pulse - 0 to 13.5V&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>With a +12V supply
+&lt;ul>
+&lt;li>Ramp - 0 to 8V&lt;/li>
+&lt;li>Triangle - 0 to 4V&lt;/li>
+&lt;li>Pulse - 0 to 10.7V&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="scale-pins">Scale pins
+&lt;/h3>&lt;ul>
+&lt;li>Pins 1 (Scale1) and 2 (Scale2)&lt;/li>
+&lt;li>For temperature compensation&lt;/li>
+&lt;/ul>
+&lt;h3 id="high-frequency-tracking">High frequency tracking
+&lt;/h3>&lt;ul>
+&lt;li>Pin 7&lt;/li>
+&lt;li>Compensates for the way that the time taken for the internal comparator to switch becomes significant at higher frequencies&lt;/li>
+&lt;/ul>
+&lt;h3 id="timing-capacitor">Timing capacitor
+&lt;/h3>&lt;ul>
+&lt;li>Pin 11&lt;/li>
+&lt;li>Use a good quality capacitor&lt;/li>
+&lt;li>Low leakage, low tempco&lt;/li>
+&lt;li>Polystyrene film is the best option&lt;/li>
+&lt;li>1nF value&lt;/li>
+&lt;/ul>
+&lt;h3 id="linear-fm-input">Linear FM input
+&lt;/h3>&lt;ul>
+&lt;li>Pin 13&lt;/li>
+&lt;li>Sometimes not used by designers, a only bias network is present (1M5, 470R, 10n)&lt;/li>
+&lt;/ul>
+&lt;h3 id="note-cv-frequency-cv-input">Note CV (Frequency CV) input
+&lt;/h3>&lt;ul>
+&lt;li>Pin 15&lt;/li>
+&lt;li>a virtual ground summing node&lt;/li>
+&lt;li>Usually see a bias network (360K, 470R, 10n)&lt;/li>
+&lt;li>Summing resistors connected to the node for CV sources&lt;/li>
+&lt;/ul></description></item></channel></rss>

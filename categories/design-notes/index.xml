@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design Notes on DIYSynthMNL</title><link>https://diysynthmnl.github.io/categories/design-notes/</link><description>Recent content in Design Notes on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://diysynthmnl.github.io/categories/design-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Multi Saturation Module</title><link>https://diysynthmnl.github.io/p/multi-saturation-module/</link><pubDate>Sun, 03 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/multi-saturation-module/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/DSC06849.jpg" alt="Featured image of post Multi Saturation Module" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-Multi-Saturation-Module" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_front.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_front_hu_6bf43099349224c7.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_front_hu_af9acebf2c16162b.jpg 1024w"
+loading="lazy"
+alt="front"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_side.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_side_hu_2183d3199182e1bc.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_side_hu_d8a167d306382d00.jpg 1024w"
+loading="lazy"
+alt="side"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_hu_ae3ef56fd889039b.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_hu_ff2083dbb5e043a8.jpg 1024w"
+loading="lazy"
+alt="back"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_close.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_close_hu_37e833928c264dbc.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_close_hu_28bd7b073575690e.jpg 1024w"
+loading="lazy"
+alt="back"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/proto_module_back.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/proto_module_back_hu_a156fa81c018b305.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/proto_module_back_hu_6151c8226695bf98.jpg 1024w"
+loading="lazy"
+alt="back"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;h2 id="some-background">Some background
+&lt;/h2>&lt;p>I’m designing a distortion/saturation modular synth module using different methods of distorting audio signals.
+This module is a combination of transformer, opto, and clipping distortion/saturation.&lt;/p>
+&lt;h2 id="revision-summary">Revision Summary
+&lt;/h2>&lt;ul>
+&lt;li>Schematic Revision 0.5 - an easier to read schematic - please note that there are some errors in this. The Eurorack power connector pins are backwards. Use this as a reference for the circuit design.&lt;/li>
+&lt;li>Schematic Revision 0.6 - multiboard layout (LATEST - working on circuit revisions)&lt;/li>
+&lt;li>PCB Revision 0.1 - revising in progress (working on rev 0.2)&lt;/li>
+&lt;/ul>
+&lt;h2 id="source-of-inspiration">Source of inspiration
+&lt;/h2>&lt;h3 id="diyres-colour-modules">DIYRe’s Colour Modules
+&lt;/h3>&lt;p>I got some ideas from DIYRe&amp;rsquo;s Colour modules. DIYRe is a company that produces DIY kits for professional audio recording equipment. Some of their product offerings include recording studio rackmount effects.&lt;/p>
+&lt;blockquote>
+&lt;p>The Colour Format&lt;br>
+Real analog plugins.&lt;br>
+&lt;a class="link" href="https://www.diyrecordingequipment.com/pages/the-colour-format" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/pages/the-colour-format&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Colour Module&lt;/td>
+&lt;td>What does it do?&lt;/td>
+&lt;td>What ideas did you get?&lt;/td>
+&lt;td>Link to page&lt;/td>
+&lt;td>Schematic&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CTX Transformer Colour&lt;/td>
+&lt;td>A transformer saturation module with a discrete opamp and a Cinemag audio transformer which has a 1:1 turns ratio.&lt;/td>
+&lt;td>Non-inverting amp to drive the transformer past what it can handle. Resistor before the transformer that isolates the opamp from the transformer.&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.diyrecordingequipment.com/products/ctx-cinemag-transformer-colour-mkii" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/products/ctx-cinemag-transformer-colour-mkii&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://cdn.shopify.com/s/files/1/0698/2265/files/CTX_mkII_Schematic.pdf?375" target="_blank" rel="noopener"
+>https://cdn.shopify.com/s/files/1/0698/2265/files/CTX_mkII_Schematic.pdf?375&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Colourphone&lt;/td>
+&lt;td>A telephone sound emulator. It uses a bandpass filter and a 1:1 turn ratio audio transformer.&lt;/td>
+&lt;td>I have a similar transformer which is a 600:600 ohm transformer. Resistor before the transformer that isolates it from the opamp.&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.diyrecordingequipment.com/products/colourphone-telephone-distortion-colour" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/products/colourphone-telephone-distortion-colour&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourphone_Schematic_1.3.pdf?8973696934571457842" target="_blank" rel="noopener"
+>https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourphone_Schematic_1.3.pdf?8973696934571457842&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Colourupter&lt;/td>
+&lt;td>An opto distortion module that is vactrol based.&lt;/td>
+&lt;td>Using a vactrol and the circuit around it. IC1c and IC1d only.&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.diyrecordingequipment.com/products/colourupter" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/products/colourupter&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourupter_Schematic_1.7.pdf?13355729951948932441" target="_blank" rel="noopener"
+>https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourupter_Schematic_1.7.pdf?13355729951948932441&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="other-sources">Other sources
+&lt;/h3>&lt;ul>
+&lt;li>Vactrol wet/dry mix from music thing modular’s spring reverb module
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.musicthing.co.uk/Spring-Reverb/" target="_blank" rel="noopener"
+>https://www.musicthing.co.uk/Spring-Reverb/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Eliot Sound Products &lt;a class="link" href="https://sound-au.com/" target="_blank" rel="noopener"
+>https://sound-au.com&lt;/a> - is a website full of audio articles that I’ve learned from. Go search for these articles, they’re great!
+&lt;ul>
+&lt;li>Designing With Op Amps&lt;/li>
+&lt;li>Audio Transformers&lt;/li>
+&lt;li>Soft Clipping&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="circuit-design">Circuit Design
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/rev_0.4_schematic.png"
+width="1518"
+height="1046"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/rev_0.4_schematic_hu_afc162cf9a12d1c8.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/rev_0.4_schematic_hu_dcde84798f4c5369.png 1024w"
+loading="lazy"
+alt="rev_0.4_schematic"
+class="gallery-image"
+data-flex-grow="145"
+data-flex-basis="348px"
+>&lt;/p>
+&lt;ul>
+&lt;li>I will update this section soon.&lt;/li>
+&lt;/ul>
+&lt;h3 id="stages">Stages
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Input gain stage (buffer only, see design note below)&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/input_buffer.png"
+width="399"
+height="240"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/input_buffer_hu_1c7b70c940391214.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/input_buffer_hu_8bbcabdf333cce16.png 1024w"
+loading="lazy"
+alt="input_buffer"
+class="gallery-image"
+data-flex-grow="166"
+data-flex-basis="399px"
+>&lt;/p>
+&lt;p>We must take into account the headroom of the op amp. The NE5532 can only output 2 volts less than the supply voltage. So for example, your supply voltage would be +/- 12V, your max output would be 10V based on the image below.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/vopp.png"
+width="1532"
+height="83"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/vopp_hu_b860d1041cd1add9.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/vopp_hu_da5f4422727645b9.png 1024w"
+loading="lazy"
+alt="vopp"
+class="gallery-image"
+data-flex-grow="1845"
+data-flex-basis="4429px"
+>&lt;/p>
+&lt;p>A buffer would suffice as the input stage. It would be nice to give the transformer more voltage but we wouldn’t be able to amplify the 10Vpp input to 12Vpp unless we use a +/- 15V supply.&lt;/p>
+&lt;p>I chose to use an NE5532 Op Amp because I believe it can drive outputs higher than TL07x.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Transformer Saturation&lt;/p>
+&lt;p>The transformer distortion works by oversaturating the transformer’s core past what it can handle. The transformer I used would normally be used in line audio signals. A 600:600 ohm transformer. We’re using Eurorack voltage which is around 10vpp so that would oversaturate the transformer.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/transformer_saturation_stage.png"
+width="602"
+height="337"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/transformer_saturation_stage_hu_b4f9c575eabaf3b0.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/transformer_saturation_stage_hu_2646089fedf28969.png 1024w"
+loading="lazy"
+alt="transformer_saturation_stage"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="428px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Vactrol Opto Electronic Saturation&lt;/p>
+&lt;p>The transformer’s output was low, I needed to add a non-inverting op amp with gain to bring the levels back to 10vpp for this stage.&lt;/p>
+&lt;p>I got this circuit from DIYRe’s Colourupter colour module which uses a Vactrol to clip the signal.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/vactrol_saturation_stage.png"
+width="823"
+height="378"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/vactrol_saturation_stage_hu_35fe7d0d89331e77.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/vactrol_saturation_stage_hu_b8de1546b8ed3e1a.png 1024w"
+loading="lazy"
+alt="vactrol_saturation_stage"
+class="gallery-image"
+data-flex-grow="217"
+data-flex-basis="522px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Soft Clipping Diode Saturation&lt;/p>
+&lt;p>I chose to place these diodes after the wet amplifier. It would be softer if I placed it before the U4A. I chained LEDs to the 1N4148s to get a softer clipping effect. LEDs alone would make saw waves looking like square waves.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/diode_clipping_stage.png"
+width="270"
+height="392"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/diode_clipping_stage_hu_f3f1f0776cb56c10.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/diode_clipping_stage_hu_51e3cf070de0bd8d.png 1024w"
+loading="lazy"
+alt="diode_clipping_stage"
+class="gallery-image"
+data-flex-grow="68"
+data-flex-basis="165px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Voltage controlled Vactrol Wet/Dry mix&lt;/p>
+&lt;p>I used my handmade Vactrol. I made it using a 5mm diffused red LED and a 5mm LDR enclosed with black heat shrink tubing. I crimped the ends so no light would leak in. 47k works for R17 with my Vactrol.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/wet_dry_mix.png"
+width="1055"
+height="512"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/wet_dry_mix_hu_8d7811b2c655ce11.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/wet_dry_mix_hu_e2b5375de43e0375.png 1024w"
+loading="lazy"
+alt="vactrol_wet_dry_mix"
+class="gallery-image"
+data-flex-grow="206"
+data-flex-basis="494px"
+>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="schematic-revisions">Schematic Revisions
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>Revision 0.2&lt;/p>
+&lt;ul>
+&lt;li>TODO
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Replace R5 with trimmer&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Test wet/dry mix on breadboard&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Input buffer biasing resistor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Notes
+&lt;ul>
+&lt;li>The transformer saturation is very subtle on a mono synth&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.3&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>TODO&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Add gain trimmer to dry signal at U2B&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Scrap the single saturation and add diode clipping and the Colourupter, the transformer alone is too subtle&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Test output gain stage&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.4&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Scrap output auto gain&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> add opto saturation&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> add soft clipping diodes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.5&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Multiboard layout&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.6&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Fix amplitude difference on opto sat stage output.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="pcb-design">PCB Design
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_white.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_white_hu_50a079410596c098.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_white_hu_8ab0482745d218b9.png 1024w"
+loading="lazy"
+alt="pcb_rev_0.1_white"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>Dec 27, 2023 - Almost satisfied with the board design, rev0.1&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_hu_12c3a8fce4346c99.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_hu_6d2f6cc32715243d.png 1024w"
+loading="lazy"
+alt="pcb_rev_0.1"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>Rev 0.1 in black&lt;/p>
+&lt;h3 id="pcb-revisions">PCB revisions
+&lt;/h3>&lt;ul>
+&lt;li>Todo for Revision 0.1
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Ground plane vias&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Front panel ground plane&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Double check hole sizes
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Trimmer&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Double check via sizes&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Round tracks&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Todo for Revision 0.2
+&lt;ul>
+&lt;li>Front panel
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add keep out zone for led window zone fills for FCU and BCU - I had to Dremel it out for the revision 0.1 front panel board&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Enlarge switch holes for Dailywell switches&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Enlarge trimmer holes&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Change tilt knob silkscreen to “mix”&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Fix amplitude difference on opto sat output. The opto stage attenuates the signal from the transformer too much&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Revision 0.1 Board test notes
+&lt;ul>
+&lt;li>Voltage tests
+&lt;ul>
+&lt;li>Power rails after reverse protection diode I used a 1N4007 diode
+&lt;ul>
+&lt;li>V+ reads about 10V&lt;/li>
+&lt;li>V- reads about 11V&lt;/li>
+&lt;li>I might need to change the reverse protection diodes to Schottkys&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Music thing modular’s cv wet dry circuit has an optimal input of 0-5V control voltages. If 10Vpp was used, the middle of the cv level pot is zero. Fully clockwise, the cv would be in phase. Fully counter clockwise, the cv is inverted. This is simulated in falstad, the file is included in the falstad folder.&lt;/li>
+&lt;li>Gain trim is finicky. Turning on the Opto would attenuate the signal. Maybe this is caused by the variety of the vactrol, I think not all vactrols are equal. Opto gain/amplitude trim might be required. It might be a simple resistor value change within the circuit.&lt;/li>
+&lt;li>LEDs are not as bright as I want them.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Europi Build</title><link>https://diysynthmnl.github.io/p/europi-build/</link><pubDate>Mon, 15 Jan 2024 12:11:43 +0000</pubDate><guid>https://diysynthmnl.github.io/p/europi-build/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/europi-build/DSC06874.jpg" alt="Featured image of post Europi Build" />&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_front.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_front_hu_2cdafe3e77bf5e82.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_front_hu_aefeaf2c2a3d014f.jpg 1024w"
+loading="lazy"
+alt="Europi Built!"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_side.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_side_hu_2dfb41c50f02741.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_side_hu_2c346397eff64a51.jpg 1024w"
+loading="lazy"
+alt="Side View"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_dissassembled.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_dissassembled_hu_6372ee81ea14de21.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_dissassembled_hu_2610243717f5010e.jpg 1024w"
+loading="lazy"
+alt="Europi Dissasembled"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_back.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_back_hu_89f255fa0c678db3.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_back_hu_20f51a00fd472eec.jpg 1024w"
+loading="lazy"
+alt="Back View"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_side_no_panel.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_side_no_panel_hu_4218d701d1dd62cf.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_side_no_panel_hu_7927eacad2d15e36.jpg 1024w"
+loading="lazy"
+alt="Side View"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_front_no_panel.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_front_no_panel_hu_cb0469d4ac0ac3d5.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_front_no_panel_hu_f83b11d01cdba970.jpg 1024w"
+loading="lazy"
+alt="Front No Panel"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;h2 id="programming-the-europi">Programming the EuroPi
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/Allen-Synthesis/EuroPi/blob/main/software/programming_instructions.md" target="_blank" rel="noopener"
+>https://github.com/Allen-Synthesis/EuroPi/blob/main/software/programming_instructions.md&lt;/a>&lt;/p>
+&lt;h2 id="using-the-smaller-version-of-the-pi-pico">Using the smaller version of the Pi Pico
+&lt;/h2>&lt;h3 id="change-pins-on-europipy">Change pins on europi.py
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/original_pin_assignments.png"
+width="289"
+height="349"
+srcset="https://diysynthmnl.github.io/p/europi-build/original_pin_assignments_hu_3c368eab87d109e3.png 480w, https://diysynthmnl.github.io/p/europi-build/original_pin_assignments_hu_5a61de0a3f82272.png 1024w"
+loading="lazy"
+alt="Original Europi Pin Assignments"
+class="gallery-image"
+data-flex-grow="82"
+data-flex-basis="198px"
+>&lt;/p>
+&lt;ul>
+&lt;li>I2C OLED pins 0, 1&lt;/li>
+&lt;li>Extra I2C pins 2, 3&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Pin assignments&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_DIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">22&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_AIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">26&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">27&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">28&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">20&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV3&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">16&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV4&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">17&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV5&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">18&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV6&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">19&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_USB_CONNECTED&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">24&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="original-pi-pico-pinouts">Original Pi Pico Pinouts
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/pi_pico_pinout.png"
+width="1999"
+height="1316"
+srcset="https://diysynthmnl.github.io/p/europi-build/pi_pico_pinout_hu_64fbb1d776911b54.png 480w, https://diysynthmnl.github.io/p/europi-build/pi_pico_pinout_hu_32cd5df102b40350.png 1024w"
+loading="lazy"
+alt="Pi Pico Pinout"
+class="gallery-image"
+data-flex-grow="151"
+data-flex-basis="364px"
+>&lt;/p>
+&lt;h3 id="pi-pico-super-mini-pinout">Pi Pico Super Mini pinout
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/RP2040-Zero-details-7.jpg"
+width="960"
+height="1029"
+srcset="https://diysynthmnl.github.io/p/europi-build/RP2040-Zero-details-7_hu_69462bc5083441e3.jpg 480w, https://diysynthmnl.github.io/p/europi-build/RP2040-Zero-details-7_hu_36ff58ddc797adcd.jpg 1024w"
+loading="lazy"
+alt="Pi Pico Super Mini Pinout"
+class="gallery-image"
+data-flex-grow="93"
+data-flex-basis="223px"
+>&lt;/p>
+&lt;h3 id="edited-europipy-pin-assignments-for-pi-pico-super-mini-to-test">Edited europi.py pin assignments for Pi Pico Super Mini (to test)
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Pin assignments&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_DIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_AIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">26&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">27&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">28&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">7&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">8&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV3&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">11&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV4&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">12&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV5&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">13&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV6&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">14&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_USB_CONNECTED&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">24&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="oled">OLED
+&lt;/h4>&lt;ul>
+&lt;li>SDA - GP0&lt;/li>
+&lt;li>SCL - GP1&lt;/li>
+&lt;/ul>
+&lt;h4 id="extra-i2c-pins">Extra I2C pins
+&lt;/h4>&lt;ul>
+&lt;li>Extra I2C 2, 3&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-does-the-outputs-work">How does the outputs work?
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_pwm_output_circuit.png"
+width="1800"
+height="1356"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_pwm_output_circuit_hu_e0c7156abc17a819.png 480w, https://diysynthmnl.github.io/p/europi-build/europi_pwm_output_circuit_hu_2901ccb7c79ec0cd.png 1024w"
+loading="lazy"
+alt="Europi output circuit"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="318px"
+>&lt;/p>
+&lt;p>How I understand it:&lt;/p>
+&lt;ul>
+&lt;li>The Pi Pico outputs a 100kHz PWM pulse&lt;/li>
+&lt;li>The output circuit filters the pulses like a DAC would do it using an RC filter.&lt;/li>
+&lt;li>When the pulse width is low (0%) the voltage is low&lt;/li>
+&lt;li>When the pulse width is high (100%) the voltage is high&lt;/li>
+&lt;/ul>
+&lt;h2 id="mcp6004-pinout">MCP6004 Pinout
+&lt;/h2>&lt;p>VDD = POSITIVE, 5v
+VSS = NEGATIVE, 0v or GND&lt;/p></description></item><item><title>AS2164 Quad Exponential VCA</title><link>https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/DSC06842.jpg" alt="Featured image of post AS2164 Quad Exponential VCA" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-2164-Quad-Exponential-VCA" target="_blank" rel="noopener"
+>Module GitHub Repo&lt;/a>&lt;/p>
+&lt;h2 id="designing-the-cv-input-circuit">Designing the cv input circuit
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2164.pdf" target="_blank" rel="noopener"
+>https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2164.pdf&lt;/a>&lt;/p>
+&lt;p>Control voltage and gain/attenuation&lt;/p>
+&lt;ul>
+&lt;li>Unity gain = 0v control voltage&lt;/li>
+&lt;li>-100dB of attenuation = +5v control voltage&lt;/li>
+&lt;/ul>
+&lt;p>With that, a control voltage of 0 to 5v is optimal. We can just invert the input using an inverting op amp.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/cv_input_circuit.png"
+width="977"
+height="469"
+srcset="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/cv_input_circuit_hu_96bdd0d20dfef939.png 480w, https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/cv_input_circuit_hu_cb477a9925f77da3.png 1024w"
+loading="lazy"
+alt="cv_input_circuit"
+class="gallery-image"
+data-flex-grow="208"
+data-flex-basis="499px"
+>&lt;/p>
+&lt;p>Another design decision that I would like to add to the module is normalling both cv and audio inputs to the next vca. I1&amp;gt;I2&amp;gt;I3&amp;gt;I4, CV1&amp;gt;CV2&amp;gt;CV3&amp;gt;CV4 when nothing is connected to multiply whatever is connected to the first input.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/2164_power_rail_failure.png"
+width="948"
+height="1297"
+srcset="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/2164_power_rail_failure_hu_87f244218a92f493.png 480w, https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/2164_power_rail_failure_hu_25338ebde41ef6c0.png 1024w"
+loading="lazy"
+alt="2164_power_rail_failure"
+class="gallery-image"
+data-flex-grow="73"
+data-flex-basis="175px"
+>&lt;/p>
+&lt;p>Protection from no negative power supply&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/2164_cv_to_db_range.png"
+width="805"
+height="66"
+srcset="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/2164_cv_to_db_range_hu_a5313f4ebb1ed052.png 480w, https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/2164_cv_to_db_range_hu_37f627dec281c466.png 1024w"
+loading="lazy"
+alt="2164_cv_to_db_range"
+class="gallery-image"
+data-flex-grow="1219"
+data-flex-basis="2927px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/hagiwo_2164.png"
+width="1609"
+height="835"
+srcset="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/hagiwo_2164_hu_75dd8ce27a4fbd40.png 480w, https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/hagiwo_2164_hu_143caac9dc76d9d.png 1024w"
+loading="lazy"
+alt="hagiwo_2164"
+class="gallery-image"
+data-flex-grow="192"
+data-flex-basis="462px"
+>&lt;/p>
+&lt;p>Hagiwo’s design.&lt;/p>
+&lt;h2 id="using-the-ssi-2164-datasheet-cv-input-circuit">Using the SSI 2164 datasheet CV input circuit
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/0_to_5v_exponential_control_circuit.png"
+width="874"
+height="512"
+srcset="https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/0_to_5v_exponential_control_circuit_hu_aaccc24656249883.png 480w, https://diysynthmnl.github.io/p/as2164-quad-exponential-vca/0_to_5v_exponential_control_circuit_hu_9294ea12b9718f.png 1024w"
+loading="lazy"
+alt="0_to_5v_exponential_control_circuit"
+class="gallery-image"
+data-flex-grow="170"
+data-flex-basis="409px"
+>&lt;/p>
+&lt;p>2164 chip voltage and attenuation relationship (Inverse) based on the ssi2164 datasheet&lt;/p>
+&lt;ul>
+&lt;li>3.4V = Mute&lt;/li>
+&lt;li>0V = unity gain
+Datasheet circuit&lt;/li>
+&lt;li>sums, inverts, attenuates the control voltage input&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="http://www.sdiy.org/philgallo/mgbvca.html" target="_blank" rel="noopener"
+>http://www.sdiy.org/philgallo/mgbvca.html&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://doepfer.de/a1324.htm" target="_blank" rel="noopener"
+>https://doepfer.de/a1324.htm&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://modwiggler.com/forum/viewtopic.php?t=96486" target="_blank" rel="noopener"
+>https://modwiggler.com/forum/viewtopic.php?t=96486&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="http://electronic-sea.net/SSM2164.html" target="_blank" rel="noopener"
+>http://electronic-sea.net/SSM2164.html&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.amazingsynth.com/parts/ssi2164/ssi2164-datasheet.pdf" target="_blank" rel="noopener"
+>https://www.amazingsynth.com/parts/ssi2164/ssi2164-datasheet.pdf&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>AS3320 VCF</title><link>https://diysynthmnl.github.io/p/as3320-vcf/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/as3320-vcf/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/DSC06861.jpg" alt="Featured image of post AS3320 VCF" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3320-VCF" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;h2 id="resources">Resources
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.eddybergman.com/2020/03/synthesizer-build-part-23-digisound-80.html" target="_blank" rel="noopener"
+>https://www.eddybergman.com/2020/03/synthesizer-build-part-23-digisound-80.html&lt;/a>&lt;/li>
+&lt;li>V3320 datasheet from cool audio&lt;/li>
+&lt;li>AS3320 datasheet&lt;/li>
+&lt;li>Hagiwo’s circuit&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/multimode-filters-part-1-reconfigurable-filters/" target="_blank" rel="noopener"
+>https://electricdruid.net/multimode-filters-part-1-reconfigurable-filters/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="reddit-help-question">Reddit help question
+&lt;/h2>&lt;p>Eurorack 3320 Low Pass VCF Design Help Needed: Electrolytics for AC Coupling? And some other design questions.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/ac_coupling_cap.png"
+width="2066"
+height="1160"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/ac_coupling_cap_hu_5e28439515948748.png 480w, https://diysynthmnl.github.io/p/as3320-vcf/ac_coupling_cap_hu_92dd73f3b8ca520a.png 1024w"
+loading="lazy"
+alt="ac_coupling_cap"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="427px"
+>&lt;/p>
+&lt;p>Hi there! I’m designing a Eurorack 3320 LP VCF based on the AS3320 chips I got from Electric Druid. I’ve tried my best to research before asking here but I came up sort of knowledge. I’d like to ask for your help! I’ve got a small quantity of these AS chips and I want to build them into Eurorack modules as correct as possible.
+The datasheet for the 3320 uses an electrolytic cap on its output. I’ve read that there are downsides when using (polarized capacitors) &lt;a class="link" href="https://northcoastsynthesis.com/news/electrolytics-for-ac-coupling/" target="_blank" rel="noopener"
+>electrolytics for AC coupling&lt;/a>.
+One suggestion that the article said is this: “Use two polarized electrolytic capacitors back to back, with or without some kind of DC bias applied to the centre, or parallel diodes that attempt to limit reverse voltage.”
+I’m not quite sure what’s the best way to handle this.
+&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3320-VCF/blob/main/Schematic%20PDFs/3320-VCF-Schematic-Rev0.1.0.pdf" target="_blank" rel="noopener"
+>My current schematic&lt;/a> applying the two polarized capacitors back to back.
+Some other questions that popped up in my head:&lt;/p>
+&lt;ol>
+&lt;li>Based on the datasheet circuit, the output of the 3320 is DC (0V to VCC*0.43)?&lt;/li>
+&lt;li>Should the 3320’s audio input be AC coupled as well?&lt;/li>
+&lt;li>What voltages does the 3320 expect at its audio inputs?&lt;/li>
+&lt;li>Circuits I saw online have inverting buffers before the 3320’s audio input. Why is this necessary? Why invert them?&lt;/li>
+&lt;/ol>
+&lt;p>I appreciate the help!&lt;/p>
+&lt;p>u/halifax&amp;rsquo;s reply:&lt;/p>
+&lt;ol>
+&lt;li>The datasheet shows an output DC offset of between 5 V to 9 V with a typical value of 6.5 V with +-15V supply and 0 V input.&lt;/li>
+&lt;li>I haven&amp;rsquo;t seen AC coupling on the Mutable Ripples or Befaco BF-22. It seems that the common practice is to not AC couple for general inputs in Eurorack low pass filters.&lt;/li>
+&lt;li>The 3320 input is basically an Operational Transconductance Amplifier (OTA) which has a current input. Pin 1 is basically at ground. There is a hard current limit on the chip of 40mA for any pin. With the 91k input resistor and assuming a +-5V VCO input you get a really small current of around +- 0.055 mA.&lt;/li>
+&lt;li>Generally you want to keep your pass band (e.g. the part below the cutoff of a low pass) to be in phase with your original signal. If you are looking at snippets of some larger schematic there may be an inverting stage upstream that they are inverting back from. Something like an inverting mixer that combines a few signals that needs to be inverted back again so that the output is in phase with the input signal.
+On your schematic I would only include the AC coupling before the Pro-one output buffer and since you know that it&amp;rsquo;s positively biased you don&amp;rsquo;t need the back-to-back caps. The feedback signal needs to be AC coupled. I would skip the inverter input, input AC coupling and change the output inverter to a buffer and get rid of that AC coupling since that is handled in the previous stage.&lt;/li>
+&lt;/ol></description></item><item><title>AS3330 Dual Lin/Exp Vca</title><link>https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3330-Dual-Lin-Exp-VCA" target="_blank" rel="noopener"
+>Module GitHub Repo&lt;/a>&lt;/p>
+&lt;h2 id="some-background">Some background
+&lt;/h2>&lt;p>The AS3330 is a dual linear/exponential VCA.
+The Eurorack module should perform as follows:&lt;/p>
+&lt;ul>
+&lt;li>10Vpp signal inputs&lt;/li>
+&lt;li>10Vpp signal outputs&lt;/li>
+&lt;li>Designed to be used with envelope generators or LFOs
+&lt;ul>
+&lt;li>Ranging from 0V-5V, 0V-10V, and 10Vpp CV signals&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="datasheet-and-digisound-80-9-circuit-design">Datasheet and Digisound 80-9 Circuit Design
+&lt;/h2>&lt;p>Refer to the datasheet diagram which I have drawn for the commentary below. I took some explanations from the Digisound 80-9 module documentation. The Digisound 80-9 has nice explanations on how the 3330 chip works. I’ve used ohms law and voltage divider calculators to make sense of the datasheet electrical characteristics and circuit.&lt;/p>
+&lt;h3 id="signal-inputs">Signal inputs
+&lt;/h3>&lt;ul>
+&lt;li>pin 4 and 13&lt;/li>
+&lt;li>10Vpp&lt;/li>
+&lt;li>A current input&lt;/li>
+&lt;li>A summing node&lt;/li>
+&lt;li>Uses 100K resistors to convert an input voltage into an input current&lt;/li>
+&lt;li>The Digisound 80-9 circuit added compensation resistor and cap. And a diode to prevent latch up problems.&lt;/li>
+&lt;/ul>
+&lt;h3 id="signal-outputs">Signal outputs
+&lt;/h3>&lt;ul>
+&lt;li>pin 1 and 16&lt;/li>
+&lt;li>should be 10Vpp&lt;/li>
+&lt;li>A current output
+&lt;ul>
+&lt;li>Uses a transimpedance amplifier configuration to convert output current into output voltage
+&lt;ul>
+&lt;li>If the output is lower or higher than 10Vpp I will experiment with the 51K feedback resistor&lt;/li>
+&lt;li>Based on the Digisound circuit. The 51K resistor sets the maximum gain to 0.4.&lt;/li>
+&lt;li>I used a 100K resistor for the feedback resistor to get the same voltage output from the input.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="control-voltage-inputs">Control voltage inputs
+&lt;/h3>&lt;ul>
+&lt;li>Linear inputs
+&lt;ul>
+&lt;li>pin 7 and 12&lt;/li>
+&lt;li>0 to 10V based on the datasheet circuit (through the resistor)
+&lt;ul>
+&lt;li>0V = max attenuation&lt;/li>
+&lt;li>10V = unity gain&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Icl = 100uA at 10V through the 100K resistor&lt;/li>
+&lt;li>A current input
+&lt;ul>
+&lt;li>The 100K resistor converts the input voltage into an input current&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A summing node
+&lt;ul>
+&lt;li>Would be able to add more control inputs like AM (Digisound 80-9) through a resistor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A compensation capacitor connected to the VG pin prevents the log converter from oscillating when the gain of the linear control input is below -80dB (Digisound 80-9)
+&lt;ul>
+&lt;li>1nF or larger&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>The input must be normalled to VCC through a jack in order to use one of the other (linear or exponential). If one is zero, the gain will be zero regardless of the voltage on the other (Digisound 80-9)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exponential inputs
+&lt;ul>
+&lt;li>pin 6 and 14&lt;/li>
+&lt;li>-1V to 10V based on the datasheet circuit (through the resistor divider)
+&lt;ul>
+&lt;li>0V = unity gain&lt;/li>
+&lt;li>10V = max attenuation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A voltage input (unverified)
+&lt;ul>
+&lt;li>A voltage divider brings down the input voltage (33K and 1K).
+&lt;ul>
+&lt;li>@10V, Vce would be 294.12 mV&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Based on the Digisound circuit. The exponential input should be inverted first to increase gain by increasing the control voltage. A 0V input should mute the signal, and a 10V input should be at unity gain. That would give you another summing node so that you can add more control inputs through resistors.&lt;/li>
+&lt;li>The input must be normalled to VCC through a jack in order to use one of the other (linear or exponential). If one is zero, the gain will be zero regardless of the voltage on the other (Digisound 80-9)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="gain-inputs">Gain inputs
+&lt;/h3>&lt;ul>
+&lt;li>pin 2 and 15&lt;/li>
+&lt;li>Based on the datasheet circuit, a resistor is connected to VCC to provide a reference current. A 100uA reference current is implied.
+&lt;ul>
+&lt;li>RB = 150K at +15V&lt;/li>
+&lt;li>RB = 120K at +12V&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>100uA produces good scale accuracy (Digisound 80-9)&lt;/li>
+&lt;/ul>
+&lt;h3 id="distortion-trim-input">Distortion trim input
+&lt;/h3>&lt;ul>
+&lt;li>pin 3 and 17&lt;/li>
+&lt;li>I currently don’t see any information on the datasheet. It’s just connected to ground.&lt;/li>
+&lt;li>In the Digisound 80-9 documentation, it uses a trimmer. Said to reduce distortion. Feedthrough would be affected though as it was said. I’m not really familiar with feedthrough yet.&lt;/li>
+&lt;/ul>
+&lt;h3 id="idle-input">IDLE input
+&lt;/h3>&lt;ul>
+&lt;li>pin 8&lt;/li>
+&lt;li>Variable operating characteristics. Class A to Class B.&lt;/li>
+&lt;li>A 6.8K resistor would set it to Class AB (datasheet)&lt;/li>
+&lt;li>A 68K resistor would set it to Class A (datasheet)&lt;/li>
+&lt;li>A 767K resistor would set it to Class B (datasheet)&lt;/li>
+&lt;li>Good balance between distortion, bandwidth and control voltage feedthrough (Digisound 80-9)&lt;/li>
+&lt;/ul>
+&lt;h3 id="power-inputs">Power inputs
+&lt;/h3>&lt;ul>
+&lt;li>VCC+
+&lt;ul>
+&lt;li>Max +18V in relation to GND&lt;/li>
+&lt;li>+12V is safe&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>VEE-
+&lt;ul>
+&lt;li>Max -6V in relation to GND&lt;/li>
+&lt;li>Current limiting resistor required for VEE voltages greater than -6V
+&lt;ul>
+&lt;li>Based on the datasheet
+&lt;ul>
+&lt;li>At -15V with a resistor of 680R, the current would be 22mA&lt;/li>
+&lt;li>So for -12V we could aim less than or equal to 22mA (ohms law calculation)
+&lt;ul>
+&lt;li>I think a 560R resistor would be ok (21.4mA)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Can use a -5V regulator with no current limiting resistors needed&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://electro-music.com/forum/phpbb-files/203_006_vca3330_schematic_119.pdf" target="_blank" rel="noopener"
+>https://electro-music.com/forum/phpbb-files/203_006_vca3330_schematic_119.pdf&lt;/a>&lt;/li>
+&lt;li>Digisound 80-9&lt;/li>
+&lt;li>&lt;a class="link" href="http://www.geofex.com/Article_Folders/panner.pdf" target="_blank" rel="noopener"
+>http://www.geofex.com/Article_Folders/panner.pdf&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.analog.com/media/en/technical-documentation/application-notes/an148fa.pdf" target="_blank" rel="noopener"
+>https://www.analog.com/media/en/technical-documentation/application-notes/an148fa.pdf&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="circuit-design">Circuit Design
+&lt;/h2>&lt;h3 id="design-inspiration">Design inspiration
+&lt;/h3>&lt;p>I took some inspiration from Intelligel’s Quad VCA module. It features four VCAs that can have a linear or exponential response. Its response can be tuned to anything in between linear and exponential. The level knob controls the CV offset so that you could use a wide range of voltage signals - bipolar or unipolar. The CV input can also be attenuated using a knob.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/lin_exp_cv_circuit_sim.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/lin_exp_cv_circuit_sim_hu_c17107d92124254f.png 480w, https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/lin_exp_cv_circuit_sim_hu_44e4c2197dc53ce9.png 1024w"
+loading="lazy"
+alt="lin_exp_cv_circuit_sim"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/bi_color_led_cv_input_driver.png"
+width="760"
+height="725"
+srcset="https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/bi_color_led_cv_input_driver_hu_3d5c159521ee644e.png 480w, https://diysynthmnl.github.io/p/as3330-dual-lin/exp-vca/bi_color_led_cv_input_driver_hu_c3b42105ae584b4.png 1024w"
+loading="lazy"
+alt="bi_color_led_cv_input_driver"
+class="gallery-image"
+data-flex-grow="104"
+data-flex-basis="251px"
+>&lt;/p></description></item><item><title>Electric Druid VCDO</title><link>https://diysynthmnl.github.io/p/electric-druid-vcdo/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/electric-druid-vcdo/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/images/DSC06823.jpg" alt="Featured image of post Electric Druid VCDO" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-Electric-Druid-VCDO1" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Draw schematic based on the datasheet&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Determine if the regulators need load resistors, I’ll put it in just in case&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Try to change the CV input op amps to MCP6004 compare both&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> TL074 will suffice&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add bitcrush CV in&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add glide CV in&lt;/li>
+&lt;/ul>
+&lt;h3 id="adding-cv-to-bitcrush-and-glide">Adding CV to bitcrush and glide
+&lt;/h3>&lt;p>The circuit below converts 10vpp +/-5v to 0-5v using a TL074 op amp&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_hu_1251f961bdf8ad95.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_hu_b7451ef7120bea2.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>The circuit below does the following. When you plug in a 10vpp signal, it will bypass RV14, the control pot. When there is nothing plugged in, you can control the parameter using the potentiometer.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2.png"
+width="1632"
+height="898"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_hu_3904d634a174fbb4.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_hu_3d6867c712016267.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_2"
+class="gallery-image"
+data-flex-grow="181"
+data-flex-basis="436px"
+>&lt;/p>
+&lt;p>The screenshot below is a simulation of the circuit above.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim_hu_48cb6763483cafe6.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_2_sim_hu_834986a2ea63641d.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_2_sim"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Take a look at the circuit from Electric Druid’s LFO. We wouldn&amp;rsquo;t need the circuit above.&lt;/li>
+&lt;/ul>
+&lt;p>A much better circuit for glide and bitcrush&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final.png"
+width="1689"
+height="961"
+srcset="https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final_hu_6e40b2e002de2beb.png 480w, https://diysynthmnl.github.io/p/electric-druid-vcdo/10vpp_to_5v_circuit_final_hu_535cc4fc686e97ce.png 1024w"
+loading="lazy"
+alt="10vpp_to_5v_circuit_final"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="421px"
+>&lt;/p></description></item><item><title>AS3340 VCO</title><link>https://diysynthmnl.github.io/p/as3340-vco/</link><pubDate>Fri, 29 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/as3340-vco/</guid><description>&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3340-VCO" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;h2 id="resources">Resources
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.timstinchcombe.co.uk/index.php?pge=trisin" target="_blank" rel="noopener"
+>Tri to sin using a JFET&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="http://www.alfarzpp.lv/eng/sc/AS3340.pdf" target="_blank" rel="noopener"
+>AS3340 Datasheet&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/" target="_blank" rel="noopener"
+>Electric Druid - 3340 VCO Designs&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://yusynth.net/Modular/EN/VCO/index.html" target="_blank" rel="noopener"
+>YuSynth VCO&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="as3340-chip-breakdown">AS3340 Chip breakdown
+&lt;/h2>&lt;h3 id="power-supply">Power Supply
+&lt;/h3>&lt;ul>
+&lt;li>Pins 16 (VCC Positive) and 3 (VEE negative)&lt;/li>
+&lt;li>CANNOT be powered with +/- 15V, +/-12V without protection&lt;/li>
+&lt;li>Voltage between VCC and VEE should be less than +24V&lt;/li>
+&lt;li>Voltage between VCC and GND should be less than +18V&lt;/li>
+&lt;li>Voltage between VEE and GND should be less than -6V
+&lt;ul>
+&lt;li>A current limiting resistor is used in the datasheet when powering it with -15V&lt;/li>
+&lt;li>You can power VEE with -5V without using a current limiting resistor&lt;/li>
+&lt;li>When powering VEE with -15V, use an 820R current limiting resistor&lt;/li>
+&lt;li>When powering VEE with -12V, use a 470R current limiting resistor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="sync">Sync
+&lt;/h3>&lt;ul>
+&lt;li>Pins 6 (Hard SYNC) and 9 (Soft SYNC)&lt;/li>
+&lt;/ul>
+&lt;h3 id="output-levels">Output Levels
+&lt;/h3>&lt;ul>
+&lt;li>Pins 4 (Pulse), 8 (Saw), and 10 (Triangle)&lt;/li>
+&lt;li>Ramp - 2/3rds of the positive supply&lt;/li>
+&lt;li>Triangle - 1/3rd of the positive supply&lt;/li>
+&lt;li>Pulse - positive supply minus 1.3V
+&lt;ul>
+&lt;li>Open emitter - requires a pulldown resistor to set the lower level&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>With a +15V supply
+&lt;ul>
+&lt;li>Ramp - 0 to 10V&lt;/li>
+&lt;li>Triangle - 0 to 5V&lt;/li>
+&lt;li>Pulse - 0 to 13.5V&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>With a +12V supply
+&lt;ul>
+&lt;li>Ramp - 0 to 8V&lt;/li>
+&lt;li>Triangle - 0 to 4V&lt;/li>
+&lt;li>Pulse - 0 to 10.7V&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="scale-pins">Scale pins
+&lt;/h3>&lt;ul>
+&lt;li>Pins 1 (Scale1) and 2 (Scale2)&lt;/li>
+&lt;li>For temperature compensation&lt;/li>
+&lt;/ul>
+&lt;h3 id="high-frequency-tracking">High frequency tracking
+&lt;/h3>&lt;ul>
+&lt;li>Pin 7&lt;/li>
+&lt;li>Compensates for the way that the time taken for the internal comparator to switch becomes significant at higher frequencies&lt;/li>
+&lt;/ul>
+&lt;h3 id="timing-capacitor">Timing capacitor
+&lt;/h3>&lt;ul>
+&lt;li>Pin 11&lt;/li>
+&lt;li>Use a good quality capacitor&lt;/li>
+&lt;li>Low leakage, low tempco&lt;/li>
+&lt;li>Polystyrene film is the best option&lt;/li>
+&lt;li>1nF value&lt;/li>
+&lt;/ul>
+&lt;h3 id="linear-fm-input">Linear FM input
+&lt;/h3>&lt;ul>
+&lt;li>Pin 13&lt;/li>
+&lt;li>Sometimes not used by designers, a only bias network is present (1M5, 470R, 10n)&lt;/li>
+&lt;/ul>
+&lt;h3 id="note-cv-frequency-cv-input">Note CV (Frequency CV) input
+&lt;/h3>&lt;ul>
+&lt;li>Pin 15&lt;/li>
+&lt;li>a virtual ground summing node&lt;/li>
+&lt;li>Usually see a bias network (360K, 470R, 10n)&lt;/li>
+&lt;li>Summing resistors connected to the node for CV sources&lt;/li>
+&lt;/ul></description></item><item><title>Building my first eurorack case</title><link>https://diysynthmnl.github.io/p/building-my-first-eurorack-case/</link><pubDate>Sat, 16 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/building-my-first-eurorack-case/</guid><description>&lt;h2 id="dimensions">Dimensions
+&lt;/h2>&lt;h3 id="rails">Rails
+&lt;/h3>&lt;p>The rails I got are not specifically made for Eurorack but I tested it with some blank panels and it works.
+I used M3 square nuts and 6mm long screws. 6mm screws are a bit short so I should get 8mm long ones.&lt;/p>
+&lt;h3 id="length">Length
+&lt;/h3>&lt;p>&lt;a class="link" href="https://synthracks.com/blog/eurorack-rails-diy-guide" target="_blank" rel="noopener"
+>https://synthracks.com/blog/eurorack-rails-diy-guide&lt;/a>
+The standard rail lengths are as follows:&lt;/p>
+&lt;ul>
+&lt;li>60HP - 304.8mm&lt;/li>
+&lt;li>84HP - 426.72mm&lt;/li>
+&lt;li>104HP - 528.32mm&lt;/li>
+&lt;li>110HP - 558.8mm&lt;/li>
+&lt;li>126HP - 640.08mm&lt;/li>
+&lt;li>168HP - 853.44mm&lt;/li>
+&lt;/ul>
+&lt;p>I will go for a single row 84HP case. So that would be a length of 426.72mm. I would cut a bit more so it would give me some room for error. I will go for a length of 427mm.
+I have to cut my rails. I have a total of 90cm to cut. I could only cut it into two so I went for 84HP.&lt;/p>
+&lt;h3 id="depth">Depth
+&lt;/h3>&lt;ul>
+&lt;li>From the top of the rails it should measure about 10cm or more depending on your power supply&lt;/li>
+&lt;/ul>
+&lt;h3 id="module-height">Module height
+&lt;/h3>&lt;p>I fit two blank modules on my rails and then measured the height between rails. I got 13.4 cm.&lt;/p>
+&lt;h2 id="design-inspiration">Design Inspiration
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_1.png"
+width="455"
+height="294"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_1_hu_e7cf9afdc295e4f4.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_1_hu_299ace3c7b8a1ddf.png 1024w"
+loading="lazy"
+alt="inspo_1"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="371px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_2.png"
+width="433"
+height="344"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_2_hu_3f8c8b5d2c244836.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_2_hu_20004071db1be258.png 1024w"
+loading="lazy"
+alt="inspo_2"
+class="gallery-image"
+data-flex-grow="125"
+data-flex-basis="302px"
+>&lt;/p>
+&lt;p>I chose this design because I like how you can change the orientation.&lt;/p>
+&lt;h3 id="my-design">My design
+&lt;/h3>&lt;p>I used google Sketchup to draft what I had in mind then I used Librecad to draw the side panel guides so I could transfer the template easily.&lt;/p>
+&lt;p>Initial drafts:&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_1.png"
+width="1032"
+height="1145"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_1_hu_45352cac9141afb.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_1_hu_e5724881f0f27e29.png 1024w"
+loading="lazy"
+alt="side_profile_1"
+class="gallery-image"
+data-flex-grow="90"
+data-flex-basis="216px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_2.png"
+width="1521"
+height="1293"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_2_hu_fa412d575a96d6b6.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_2_hu_1ccad6e990baec54.png 1024w"
+loading="lazy"
+alt="side_profile_2"
+class="gallery-image"
+data-flex-grow="117"
+data-flex-basis="282px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_3.png"
+width="1047"
+height="904"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_3_hu_bae135a15b3a22b4.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_3_hu_2c87e4c8be2d17ca.png 1024w"
+loading="lazy"
+alt="side_profile_3"
+class="gallery-image"
+data-flex-grow="115"
+data-flex-basis="277px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_4.png"
+width="1908"
+height="1357"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_4_hu_4a130a1b1b6fcf91.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_4_hu_6b0b5818a74eae63.png 1024w"
+loading="lazy"
+alt="side_profile_4"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="337px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6.png"
+width="1250"
+height="877"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_a6dbebe9de8a8b53.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_e1dcd4a444194865.png 1024w"
+loading="lazy"
+alt="side_profile_5"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;p>Final Design:&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6.png"
+width="1250"
+height="877"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_a6dbebe9de8a8b53.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_e1dcd4a444194865.png 1024w"
+loading="lazy"
+alt="side_profile_6"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_7.png"
+width="1252"
+height="880"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_7_hu_b99f96e875fc0a8f.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_7_hu_79be2e87734f1c85.png 1024w"
+loading="lazy"
+alt="side_profile_7"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="341px"
+>&lt;/p>
+&lt;p>I would recommend using half inch or 10 - 15 mm thick plywood I used scrap wood. Make sure to screw in your rails first with some blank panels or modules in order to keep error low.
+My workflow:&lt;/p>
+&lt;ul>
+&lt;li>I’ll cut the rails into two&lt;/li>
+&lt;li>Try them out with blanks&lt;/li>
+&lt;li>Measure the height
+&lt;ul>
+&lt;li>The height I measured was 13.4cm&lt;/li>
+&lt;li>Think of the wood panel design, either beveled view or not&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Design the side panels&lt;/li>
+&lt;li>Then cut wood panels&lt;/li>
+&lt;li>Build!&lt;/li>
+&lt;/ul>
+&lt;h3 id="some-resources">Some resources
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=6mVbi8B3usY" target="_blank" rel="noopener"
+>DIY eurorack case part 1&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Ladik R110 Clone</title><link>https://diysynthmnl.github.io/p/ladik-r110-clone/</link><pubDate>Wed, 13 Dec 2023 10:13:27 +0000</pubDate><guid>https://diysynthmnl.github.io/p/ladik-r110-clone/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side.jpg" alt="Featured image of post Ladik R110 Clone" />&lt;h2 id="idea">Idea
+&lt;/h2>&lt;p>I stumbled upon a video that relies on this clocked random trigger/gates module from State Azure.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/6JeZR13dLLI"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>Here’s his patch notes:&lt;/p>
+&lt;p>Main clock from Pamela&amp;rsquo;s New Workout, into Ladik R-110 for the random trigs/gates which are essential to this patch.
+(Synth voice - Plaits)Trig 1 goes through a Ladik S-090 Skipper at around 60%, which also is being CV modulated via Modbox with a very slow LFO. Trig 1 is then sent to Sinfonion Arp Clock input, which is also copied out to Delta V envelope generator slow atk/decay (decay modulated gently via one of Ochd&amp;rsquo;s outputs). This envelope controls Plaits output via the built into VCA in Delta V. Sinfonion Arp 1v/Oct Out goes into Plaits (arp set to either random or Brownian). Plaits Timbre is modulated via URA A-Out, Harm by B-Out, and Morph by another channel of Ochd. Plaits also receives fast sine LFO FM for vibrato. Plaits then goes through Belgrad, with v/oct modulated by second channel of Delta V 50%atk, 50%dcy (same Trig 1 activates it), which is also copied to Ochd CV input to modulated Ochd speed everytime the envelope is triggered. Belgrad set to 6th filter, FM on, 60% resonance. Span modulated via slow LFO of Ochd, and FM modulated by fast LFO of Ochd.
+(Vangelis lead - 4ms Ensemble) Gate1 from Ladik R-110 into Skipper set around 50% (CV modulated) via slow LFO from Modbox. Output from Skipper goes to Quadigy channel 1 and copied to Trig input on RndStep, copied again to Time Warp Gate input. Quadigy Ch.1 Envelope to Tallin linear input, slow attack/decay. Input into Tallin 4ms Ensemble Out B, Balance set to 70%, Twist, Warp and Cross FM all at 0%. Twist opens up via Ch.2 of Quadigy which is tied to Ch.1&amp;rsquo;s trigger, and also has a slow atk/decay for the synth swell. RndStep Bipolar output (attentuated) goes to Ch.3 on Sinfonion, with Ch.3 Sin output going into Time Warp (for Slew), out from Time Warp into 4ms Ensemble 1v/oct input.
+(Chainsaw Bass) Ch.1 Output from Sinfonion provides notes, into Chainsaw 1v/oct input. Chainsaw then into Freak filter (Steiner-Parker model), cutoff modulated via Ch. 4 of Quadigy which is triggered by PNW very slow/divided pulse into Skipper.
+(Chainsaw 2-note chords) Sinfonion chord Out 1 and Out 3 to second Chainsaw, then out to dual Cinnamon filters set to low-pass, with soft/slow LFO over cutoff via Batumi.
+(Sinfonion Key Change) Sinfonion song set to just two steps = E7 to A Major. In1 on Sinfonion set to advance through steps via Trig. Trig comes from PNW slow/heavily divided gate into another Skipper, then to Sinfonion.
+Lubadh plays back improvised recording from the Wavestate.&lt;/p>
+&lt;h2 id="heres-the-modules-details">Here’s the module’s details
+&lt;/h2>&lt;p>R-110 “Random clocked trigs/gates w. disable input” module for eurorack / Doepfer A100 system.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front.jpg"
+width="125"
+height="800"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front_hu_7c05d9bc785c3976.jpg 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front_hu_67c6819936e6d65d.jpg 1024w"
+loading="lazy"
+alt="ladik_r-110_front"
+class="gallery-image"
+data-flex-grow="15"
+data-flex-basis="37px"
+> &lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side.jpg"
+width="283"
+height="800"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side_hu_c55ec88be4b4143a.jpg 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side_hu_88f6a926cb5ea17b.jpg 1024w"
+loading="lazy"
+alt="ladik_r-110_side"
+class="gallery-image"
+data-flex-grow="35"
+data-flex-basis="84px"
+>&lt;/p>
+&lt;p>From top to bottom:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Disable input jack + LED (if active, gate outputs stays in its current state or are all switched off – selectable by internal jumper)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Clock input jack + LED&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Trig 1/2/3 output jacks and LEDs (probability = 1/3 so in average every third input clock makes output trigger)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gate 1/2/3 output jacks and LEDs (probability = 1/3 so in average every third clock toggles output)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If there will be say 300 input clocks every trig output makes around 100 trigs. All outputs has same probability but they are independently evaluated (so they can fire together sometimes or individually sometimes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gates are processed similar way but there is “probability of change state”, if clock is evaluated as “valid” to change output state then output toggles (if currently is off then becomes on and vice versa) making gates “quantized” by their lengths to input clocks (gates starts and ends at clocks).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Configurable parameters&lt;/strong> (by internal jumpers, just one of first five should be set):&lt;/p>
+&lt;p>1. &lt;strong>jumper 1&lt;/strong>: fixed &lt;strong>1ms&lt;/strong> trig outputs&lt;/p>
+&lt;p>2. &lt;strong>jumper 2&lt;/strong>: fixed &lt;strong>200ms&lt;/strong> trig outputs&lt;/p>
+&lt;p>3. &lt;strong>jumper 3&lt;/strong>: variable trigger outputs length – &lt;strong>quarter&lt;/strong> of input gate length&lt;/p>
+&lt;p>4. &lt;strong>jumper 4&lt;/strong>: variable trigger outputs length – &lt;strong>half&lt;/strong> of input gate length&lt;/p>
+&lt;p>5. &lt;strong>jumper 5&lt;/strong>: variable trigger outputs length – &lt;strong>equal&lt;/strong> to input gate length&lt;/p>
+&lt;p>6. &lt;strong>independent &amp;ldquo;disable&amp;rdquo; jumper&lt;/strong> (behind T1 output jack): gate outputs stays in its current state (jumper not set ) or are all switched off (jumper set) at active “disable” input signal&lt;/p>
+&lt;h2 id="circuit-design">Circuit Design
+&lt;/h2>&lt;p>It uses what looks like an ATMEL chip which probably is an ATMEGA. We can use an Arduino Nano for this module.&lt;/p>
+&lt;blockquote>
+&lt;p>We have to protect the Arduino from 10vpp levels as a safety precaution. Head on to &lt;a class="link" href="../protecting-digital-io-from-eurorack-levels/" >Protecting Digital IO From Eurorack Levels&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h3 id="eurorack-voltage-levels">Eurorack voltage levels
+&lt;/h3>&lt;ul>
+&lt;li>CV -5v to +5v, 10vpp&lt;/li>
+&lt;li>Clocks, Gates, Triggers are TTL level which is 0v to 5v (logic level)&lt;/li>
+&lt;/ul>
+&lt;p>With this in mind, additional circuitry will be needed in order to protect i/o and convert Eurorack levels to Arduino levels.&lt;/p>
+&lt;h3 id="the-modules-inputs-are-as-follows">The module’s inputs are as follows
+&lt;/h3>&lt;ul>
+&lt;li>Gate hold (disable input) input, logic level&lt;/li>
+&lt;li>Clock input, logic level&lt;/li>
+&lt;/ul>
+&lt;p>We can protect the inputs using this circuit:
+&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit.png"
+width="1138"
+height="815"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit_hu_c6260ed3d42f6f.png 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit_hu_55c4860e7b94e933.png 1024w"
+loading="lazy"
+alt="clock_input_circuit"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="335px"
+>&lt;/p>
+&lt;h3 id="the-modules-outputs-are-as-follows">The module’s outputs are as follows
+&lt;/h3>&lt;ul>
+&lt;li>Trigger out 1/2/3&lt;/li>
+&lt;li>Gate out 1/2/3&lt;/li>
+&lt;/ul>
+&lt;p>We can have additional protection for the outputs in case the user accidentally plugs in a 10vpp voltage source, but we can worry about that later on. For now we’ll just directly connect the Arduino to the output jacks.&lt;/p>
+&lt;h2 id="how-the-module-works">How the module works
+&lt;/h2>&lt;p>Let’s start by listing the module’s i/o:&lt;/p>
+&lt;ul>
+&lt;li>Inputs
+&lt;ul>
+&lt;li>Clock input&lt;/li>
+&lt;li>Gate hold input&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Outputs
+&lt;ul>
+&lt;li>Triggers 1/2/3
+&lt;ul>
+&lt;li>Probability of firing is 1 out of 3 clock pulses&lt;/li>
+&lt;li>Can be set to a fixed value (1ms, 200ms) or variable (1/4, 1/2, 1/1, of clock input pulses) depending on the clock length by jumpers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Gates 1/2/3
+&lt;ul>
+&lt;li>Probability of firing is 1 out of 3 clock pulses&lt;/li>
+&lt;li>Gates will be the same as the clock pulse length&lt;/li>
+&lt;li>If the gate hold input is high, their current state will be held&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quick Tips on DIYSynthMNL</title><link>https://diysynthmnl.github.io/categories/quick-tips/</link><description>Recent content in Quick Tips on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://diysynthmnl.github.io/categories/quick-tips/index.xml" rel="self" type="application/rss+xml"/><item><title>Kikit Multiboard Workflow</title><link>https://diysynthmnl.github.io/p/kikit-multiboard-workflow/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/kikit-multiboard-workflow/</guid><description>&lt;p>KiCad terminal Command&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">kikit&lt;/span> &lt;span class="n">separate&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">source&lt;/span> &lt;span class="s2">&amp;#34;annotation; ref: B3&amp;#34;&lt;/span> &lt;span class="o">^&lt;/span> &lt;span class="s2">&amp;#34;C:\Users\Acer\Desktop\Synth DIY\KiCad Designs\EuroBusboard\EuroBusboard.kicad_pcb&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;C:\Users\Acer\Desktop\Synth DIY\KiCad Designs\EuroBusboard\eurobusboard_jst_8.kicad_pcb&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>How to use it?&lt;/p>
+&lt;ol>
+&lt;li>Open KiCad Command Prompt&lt;/li>
+&lt;li>Enter the command&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">kikit&lt;/span> &lt;span class="n">separate&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">source&lt;/span> &lt;span class="s2">&amp;#34;annotation; ref: [Board marker reference (ex. A)]&amp;#34;&lt;/span> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;[Path to .kicad_pcb to separate]&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;[Path to save separated .kicad_pcb]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>My Kicad Board Setup Settings</title><link>https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1.png" alt="Featured image of post My Kicad Board Setup Settings" />&lt;h2 id="board-stackup---physical-stackup">Board Stackup - Physical stackup
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1.png"
+width="987"
+height="590"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1_hu_46f1e08c5729f5b0.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1_hu_8d1a44ebeb265bdc.png 1024w"
+loading="lazy"
+alt="board_setup_1"
+class="gallery-image"
+data-flex-grow="167"
+data-flex-basis="401px"
+>&lt;/p>
+&lt;h2 id="board-stackup---board-finish">Board Stackup - Board Finish
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/2.png"
+width="986"
+height="586"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/2_hu_1a061c0227cc37b9.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/2_hu_8c9185c1c7ba8c4c.png 1024w"
+loading="lazy"
+alt="board_setup_2"
+class="gallery-image"
+data-flex-grow="168"
+data-flex-basis="403px"
+>&lt;/p>
+&lt;h2 id="board-stackup---solder-maskpaste">Board Stackup - Solder Mask/Paste
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/3.png"
+width="988"
+height="594"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/3_hu_edda6bb63073ec1a.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/3_hu_d5446a87f13e2c8.png 1024w"
+loading="lazy"
+alt="board_setup_3"
+class="gallery-image"
+data-flex-grow="166"
+data-flex-basis="399px"
+>&lt;/p>
+&lt;h2 id="text--graphics---defaults">Text &amp;amp; Graphics - Defaults
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/4.png"
+width="1095"
+height="590"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/4_hu_a1eba0e35b879bd7.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/4_hu_3fe15ee4441ba6a0.png 1024w"
+loading="lazy"
+alt="board_setup_4"
+class="gallery-image"
+data-flex-grow="185"
+data-flex-basis="445px"
+>&lt;/p>
+&lt;h2 id="design-rules---constraints">Design Rules - Constraints
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/5.png"
+width="1100"
+height="588"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/5_hu_63f32e9593c70355.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/5_hu_f8c0853cd8fc8a50.png 1024w"
+loading="lazy"
+alt="board_setup_5"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="448px"
+>&lt;/p>
+&lt;h2 id="design-rules---pre-defined-sizes">Design Rules - Pre-defined Sizes
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/6.png"
+width="1102"
+height="589"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/6_hu_9e20ea767670f5b8.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/6_hu_f2c7f4c91d00db44.png 1024w"
+loading="lazy"
+alt="board_setup_6"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="449px"
+>&lt;/p></description></item><item><title>Eurorack Panel Making With KiCad, LibreCad, and Inkscape</title><link>https://diysynthmnl.github.io/p/eurorack-panel-making-with-kicad-librecad-and-inkscape/</link><pubDate>Wed, 27 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/eurorack-panel-making-with-kicad-librecad-and-inkscape/</guid><description>&lt;h2 id="my-workflow-on-making-eurorack-front-panels">My workflow on making Eurorack front panels
+&lt;/h2>&lt;ol>
+&lt;li>Lock footprints on control board where the controls are soldered by using the lock feature in KiCad so that they won’t be moved when placing the panel hole footprints.&lt;/li>
+&lt;li>Make the panel board outline. Be sure to align it with the control board. The footprints of the control board should be locked or else you’ll have a hard time moving the panel board out of the control board.&lt;/li>
+&lt;li>Place panel hole footprints on the control board footprints. Alignment points on the panel hole footprints should snap to the control board footprints.&lt;/li>
+&lt;li>When finished placing panel hole footprints. Triple check alignment then highlight the whole front panel and move it out of the control board. Make sure that the locked footprints are not selectable - unselect locked footprints check box in selection filter.&lt;/li>
+&lt;li>To make it easy to make the front panel graphics, I use LibreCad to mark holes and clearances for the graphics. In KiCad, you will use the dimension tool to mark where the holes are and then transfer it manually to LibreCad. I’ll explore exporting to svg in kicad soon.&lt;/li>
+&lt;li>Next I’ll import the hole guide svg to inkscape to place front panel graphics.&lt;/li>
+&lt;li>Use black for the objects and paths, use white for the background.&lt;/li>
+&lt;li>Convert all objects to paths (text are objects). This is important because KiCad can’t render those objects.&lt;/li>
+&lt;li>Keep the board outline, you’ll need it for alignment later in KiCad.&lt;/li>
+&lt;li>The svg created in Inkscape should be ready for importing.&lt;/li>
+&lt;li>Import the svg by clicking file &amp;gt; import &amp;gt; graphics (ctrl + shift + F) and import your svg file.&lt;/li>
+&lt;li>Double click the front panel graphics and make the layer front silkscreen.&lt;/li>
+&lt;li>Align the graphic to the front panel board outline.&lt;/li>
+&lt;/ol></description></item><item><title>Adding Symbols, Footprints, and Libraries in Kicad</title><link>https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/</guid><description>&lt;h2 id="adding-libraries">Adding Libraries
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/adding_libraries.png"
+width="777"
+height="360"
+srcset="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/adding_libraries_hu_84e3f313af8cd1e.png 480w, https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/adding_libraries_hu_96262df224da1aa6.png 1024w"
+loading="lazy"
+alt="adding_libraries.png"
+class="gallery-image"
+data-flex-grow="215"
+data-flex-basis="518px"
+>&lt;/p>
+&lt;h3 id="symbol-libraries">Symbol Libraries
+&lt;/h3>&lt;ul>
+&lt;li>Make sure you put the library in a folder that you would not delete. Not in your downloads folder.&lt;/li>
+&lt;li>Click add existing library to table&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/symbol_libraries.png"
+width="1021"
+height="689"
+srcset="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/symbol_libraries_hu_ea31bc7160f20252.png 480w, https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/symbol_libraries_hu_75934cb6d2ed18ff.png 1024w"
+loading="lazy"
+alt="symbol_libraries.png"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="355px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Browse to your &lt;code>.sym&lt;/code> or &lt;code>.lib&lt;/code> file within your folder and click ok&lt;/li>
+&lt;/ul>
+&lt;h3 id="footprint-libraries">Footprint Libraries
+&lt;/h3>&lt;ul>
+&lt;li>Make sure you put the library in a folder that you would not delete. Not in your downloads folder.&lt;/li>
+&lt;li>Click add existing library to table&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/footprint_libraries.png"
+width="1009"
+height="680"
+srcset="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/footprint_libraries_hu_1b11b0c8bf489424.png 480w, https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/footprint_libraries_hu_255d522939c5c70a.png 1024w"
+loading="lazy"
+alt="footprint_libraries.png"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="356px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Browse to your .pretty folder and select it. Then click ok.&lt;/li>
+&lt;/ul>
+&lt;h2 id="adding-footprints">Adding footprints
+&lt;/h2>&lt;p>To be continued&amp;hellip;&lt;/p></description></item><item><title>Pcb Track Widths, Vias, and Pads</title><link>https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/</guid><description>&lt;p>To jumpstart your PCB design I will list my recommended track widths for module PCBs.
+If you&amp;rsquo;re going for another manufacturer, be sure to know their capabilities.&lt;/p>
+&lt;ul>
+&lt;li>PCBWAY capabilities &lt;a class="link" href="https://www.pcbway.com/capabilities.html" target="_blank" rel="noopener"
+>https://www.pcbway.com/capabilities.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="track-widths">Track widths
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.reddit.com/r/synthdiy/comments/y1be7v/pcb_design_how_do_you_pick_trace_widths_for_your/" target="_blank" rel="noopener"
+>https://www.reddit.com/r/synthdiy/comments/y1be7v/pcb_design_how_do_you_pick_trace_widths_for_your/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>0.02” for signal, 0.127mm, or 5 mils&lt;/li>
+&lt;li>0.035” for power, 0.889mm,&lt;/li>
+&lt;li>PCBWAY: 4mil minimum, recommends a trace width above 6mils (0.15mm)&lt;/li>
+&lt;/ul>
+&lt;h2 id="minimum-track-clearance">Minimum track clearance
+&lt;/h2>&lt;ul>
+&lt;li>PCBWAY: 4mil minimum, recommended 6mil&lt;/li>
+&lt;/ul>
+&lt;h2 id="vias">Vias
+&lt;/h2>&lt;ul>
+&lt;li>0.2mm inner dia, 0.5mm outer dia&lt;/li>
+&lt;li>PCBWAY: Min drill size is 0.2mm, max drill is 6.3mm. Any holes greater than 6.3mm or smaller than 0.3mm will be subject to extra charges.&lt;/li>
+&lt;/ul>
+&lt;h2 id="pads">Pads
+&lt;/h2>&lt;ul>
+&lt;li>For my longer pad footprints I use 2.54mm L * 1.6mm W with a 0.8mm hole&lt;/li>
+&lt;li>PCBWAY: Min drill size is 0.2mm, max drill is 6.3mm. Any holes greater than 6.3mm or smaller than 0.3mm will be subject to extra charges.&lt;/li>
+&lt;/ul>
+&lt;h2 id="text">Text
+&lt;/h2>&lt;ul>
+&lt;li>PCBWAY: min character width is 0.15mm&lt;/li>
+&lt;/ul>
+&lt;h2 id="panelization">Panelization
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization.png"
+width="927"
+height="116"
+srcset="https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization_hu_19ccea16225c43fe.png 480w, https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization_hu_ac5203cd3476eb53.png 1024w"
+loading="lazy"
+alt="panelization.png"
+class="gallery-image"
+data-flex-grow="799"
+data-flex-basis="1917px"
+>&lt;/p></description></item><item><title>Powering Your Module</title><link>https://diysynthmnl.github.io/p/powering-your-module/</link><pubDate>Thu, 14 Dec 2023 17:21:32 +0000</pubDate><guid>https://diysynthmnl.github.io/p/powering-your-module/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/powering-your-module/eurorack_power_pinouts.png" alt="Featured image of post Powering Your Module" />&lt;h2 id="the-basic-components-of-a-power-input-circuit-in-a-module">The basic components of a power input circuit in a module
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/powering-your-module/mutable_instruments_power_input_circuit.png"
+width="1840"
+height="682"
+srcset="https://diysynthmnl.github.io/p/powering-your-module/mutable_instruments_power_input_circuit_hu_83a7f4ff97f774ce.png 480w, https://diysynthmnl.github.io/p/powering-your-module/mutable_instruments_power_input_circuit_hu_859f441214aa1b87.png 1024w"
+loading="lazy"
+alt="mutable_instruments_power_input_circuit.png"
+class="gallery-image"
+data-flex-grow="269"
+data-flex-basis="647px"
+>&lt;/p>
+&lt;p>The circuit above is from a Mutable Instruments module.&lt;/p>
+&lt;ul>
+&lt;li>IDC input&lt;/li>
+&lt;li>Reverse polarity protection&lt;/li>
+&lt;li>Filter caps&lt;/li>
+&lt;/ul>
+&lt;h2 id="the-eurorack-standard-power-connector">The Eurorack standard power connector
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/powering-your-module/eurorack_power_pinouts.png"
+width="3490"
+height="3494"
+srcset="https://diysynthmnl.github.io/p/powering-your-module/eurorack_power_pinouts_hu_19cb0829c2f29737.png 480w, https://diysynthmnl.github.io/p/powering-your-module/eurorack_power_pinouts_hu_377ab4f7c2ba14b3.png 1024w"
+loading="lazy"
+alt="eurorack_power_pinouts.png"
+class="gallery-image"
+data-flex-grow="99"
+data-flex-basis="239px"
+>&lt;/p></description></item><item><title>Protecting Microcontroller Digital IO From Eurorack Levels</title><link>https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/</link><pubDate>Thu, 14 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection.jpg" alt="Featured image of post Protecting Microcontroller Digital IO From Eurorack Levels" />&lt;p>Here are some circuits to help protect your precious microcontroller&amp;rsquo;s inputs.&lt;/p>
+&lt;h2 id="protecting-microcontroller-analog-inputs">Protecting microcontroller analog inputs
+&lt;/h2>&lt;h3 id="using-mutable-instruments-grids-as-our-first-example">Using Mutable Instruments’ Grids as our first example
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection.jpg"
+width="1372"
+height="769"
+srcset="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection_hu_63d5d5b7db1473a7.jpg 480w, https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection_hu_5d9dc998b2927991.jpg 1024w"
+loading="lazy"
+alt="grids_input_protection.jpg"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="428px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_reference_voltage_diode.jpg"
+width="1476"
+height="625"
+srcset="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_reference_voltage_diode_hu_8c4106b810a3f28a.jpg 480w, https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_reference_voltage_diode_hu_98dfbf7b01e84574.jpg 1024w"
+loading="lazy"
+alt="grids_reference_voltage_diode.jpg"
+class="gallery-image"
+data-flex-grow="236"
+data-flex-basis="566px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection_simulation.jpg"
+width="1000"
+height="1410"
+srcset="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection_simulation_hu_2b670ccc237b0a55.jpg 480w, https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_input_protection_simulation_hu_c1eaf085bd3eb43d.jpg 1024w"
+loading="lazy"
+alt="grids_input_protection_simulation.jpg"
+class="gallery-image"
+data-flex-grow="70"
+data-flex-basis="170px"
+>&lt;/p>
+&lt;ul>
+&lt;li>You will need a rail to rail op amp. A popular choice would be an MCP6002 chip.&lt;/li>
+&lt;li>The op amp would be powered by 5v and ground &lt;strong>(not +-12V!)&lt;/strong>. This will &amp;ldquo;clamp&amp;rdquo; the cv signal.&lt;/li>
+&lt;li>The output of the op amp connects to an analog input of a microcontroller.&lt;/li>
+&lt;li>You would need a negative reference voltage source. Grids used a Zener diode. VEE is -12v.&lt;/li>
+&lt;li>I usually use a 7905 -5v negative voltage regulator for the reference voltage.&lt;/li>
+&lt;li>&lt;strong>This is an inverting op amp circuit, you would need to adjust your code to accept inverted values&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="adding-an-input-amplitude-knob">Adding an input amplitude knob
+&lt;/h3>&lt;p>Adding an input amplitude knob to the Grids circuit would help us accept a wide range of signals in combination with the offset knob. 0-5v, 0-10v, and +-5v.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/protection_circuit_with_offset_knob_and_input_amplitude_knob.jpg"
+width="972"
+height="514"
+srcset="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/protection_circuit_with_offset_knob_and_input_amplitude_knob_hu_2ff641dc91054ca0.jpg 480w, https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/protection_circuit_with_offset_knob_and_input_amplitude_knob_hu_965808e51f2ad8c6.jpg 1024w"
+loading="lazy"
+alt="protection_circuit_with_offset_knob_and_input_amplitude_knob.jpg"
+class="gallery-image"
+data-flex-grow="189"
+data-flex-basis="453px"
+>&lt;/p>
+&lt;h2 id="protecting-microcontroller-digital-inputs">Protecting microcontroller digital inputs
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_digital_io_protection_circuit.jpg"
+width="818"
+height="735"
+srcset="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_digital_io_protection_circuit_hu_a139223177512c07.jpg 480w, https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/grids_digital_io_protection_circuit_hu_ba91d01aa00d09c5.jpg 1024w"
+loading="lazy"
+alt="grids_digital_io_protection_circuit.jpg"
+class="gallery-image"
+data-flex-grow="111"
+data-flex-basis="267px"
+>&lt;/p>
+&lt;ul>
+&lt;li>It uses an NPN transistor with a pullup resistor&lt;/li>
+&lt;li>&lt;strong>Note that the Arduino pin will be low when the gate is high, code with this in mind.&lt;/strong>&lt;/li>
+&lt;li>It connects directly to a digital input pin of the Arduino&lt;/li>
+&lt;li>To protect your inputs more, you could add clamping diodes to the base of the transistor like below&lt;/li>
+&lt;li>The bat42 Schottky diode is commonly used for this purpose&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/digital_input_protection_circuit.jpg"
+width="1650"
+height="1220"
+srcset="https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/digital_input_protection_circuit_hu_93a3a769c1851a62.jpg 480w, https://diysynthmnl.github.io/p/protecting-microcontroller-digital-io-from-eurorack-levels/digital_input_protection_circuit_hu_17eb02457c269c6f.jpg 1024w"
+loading="lazy"
+alt="digital_input_protection_circuit.jpg"
+class="gallery-image"
+data-flex-grow="135"
+data-flex-basis="324px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Disclaimer: The information provided in this blog is based on my personal experience and knowledge. I am not formally educated in electronics design, and any design or information should be undertaken at your own risk. It is always recommended to consult with a qualified professional or conduct thorough research before attempting any electronics project. I do not guarantee the accuracy, completeness, or reliability of the information presented on this blog. By using this blog, you agree that I shall not be held responsible for any damages or losses that may arise from your use of the information provided.&lt;/p>&lt;/blockquote></description></item></channel></rss>
