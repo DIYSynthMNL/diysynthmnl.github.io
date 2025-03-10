@@ -2,7 +2,7 @@
 title: "Pi Pico Random Looping Sequencer"
 description: 
 date: 2025-03-08T09:50:14Z
-image: 
+image: images/DSC06774.jpg
 categories:
     - Design Notes
 tags:

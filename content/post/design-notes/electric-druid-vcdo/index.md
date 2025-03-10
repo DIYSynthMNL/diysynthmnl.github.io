@@ -2,7 +2,7 @@
 title: "Electric Druid VCDO"
 description: 
 date: 2023-12-29T06:07:14Z
-image: 
+image: images/DSC06823.jpg
 categories:
     - Design Notes
 tags:

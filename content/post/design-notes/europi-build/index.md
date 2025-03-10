@@ -2,7 +2,7 @@
 title: "Europi Build"
 description: 
 date: 2024-01-15T12:11:43Z
-image: europi_front_no_panel.jpg
+image: DSC06874.jpg
 categories:
     - Design Notes
 tags:

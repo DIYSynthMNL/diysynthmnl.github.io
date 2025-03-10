@@ -2,7 +2,7 @@
 title: "AS3320 VCF"
 description: 
 date: 2023-12-29T06:07:14Z
-image: 
+image: DSC06861.jpg
 categories:
     - Design Notes
 tags:

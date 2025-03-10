@@ -2,7 +2,7 @@
 title: "Multi Saturation Module"
 description: 
 date: 2023-12-03T00:00:00+08:00
-image: prototype_module_front.jpg
+image: DSC06849.jpg
 categories:
     - Design Notes
 tags:

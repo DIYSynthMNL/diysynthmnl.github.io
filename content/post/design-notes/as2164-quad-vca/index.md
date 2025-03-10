@@ -2,7 +2,7 @@
 title: "AS2164 Quad Exponential VCA"
 description: A Quad Exponential VCA Module based on the AS2164 chip
 date: 2023-12-29T06:07:14Z
-image: 
+image: DSC06842.jpg
 categories:
     - Design Notes
 tags:
