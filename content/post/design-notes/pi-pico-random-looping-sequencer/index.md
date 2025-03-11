@@ -55,6 +55,44 @@ Also, I've taken some code from the [EuroPi](https://github.com/Allen-Synthesis/
 - Output cv quantized based on scale chosen
 - 4 Analog parameter knobs with inputs
 
+## IO
+
+- 4 Analog inputs with attenuation and offset knobs (serving as control knobs if no input is connected)
+- Trig in
+- Digital input
+- Digital output
+- Analog CV output
+
+## Schematic
+
+I used a clone of the Pi Pico (Pi Pico Lite Black 16MB).
+
+If you don't have it available, you can use an original Pi Pico. You just have to change some pin assignments. The clone I found has an additional ADC pin (GP29).
+You can ommit the fourth cv input, you just have to adjust the code.
+
+![Schematic](images/pi-pico-random-looping-sequencer-schematic-rev-0.1.0.jpg)
+
+## Starting fresh (Preparing the pico for the firmware)
+
+1. Download [flash_nuke.uf2](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython#flash-resetting-uf2-3083182) from Adafruit.
+2. While holding down the BOOTSEL button on the Pi Pico, connect the usb cable to your computer.
+3. It should be visible as a USB drive as RPI-RP2. Copy the downloaded `flash_nuke.uf2` into it. This will wipe any firmware in the Pico. Be sure to backup any files in your Pico.
+
+## Development instructions
+
+- Turn on the module (eurorack power)
+- Plug in the usb to the pico (yes it won't damage the pico)
+
+### Developing with VSCode
+
+Use VSCode with the plugin MicroPico
+
+Use the commands while developing:
+
+- Delete all files from pico
+- Upload project files to pico
+- Run
+
 ### Menu system
 
 I cobbled up some code to help me make a menu system for this project. Its still in the early stages of development. I still need to clean it up.
@@ -80,35 +118,6 @@ It is designed to hold data but you should have variables in your main program s
 For example, you need to get data from a submenu: you would need to call `get_submenu_list()` in order to update the main program's variables.
 To help you update your main program's variables from the submenus, you will need to provide a callback function in your main program (example: `update_values()`).
 This callback function will only be called when a submenu's selected value has been changed (user pressed the encoder button).
-
-## IO
-
-- 4 Analog knobs with tied inputs with input level knobs
-- Trig in
-- Digital input
-- Digital output
-- Analog CV output
-
-## Starting fresh (Preparing the pico for the firmware)
-
-1. Download [flash_nuke.uf2](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython#flash-resetting-uf2-3083182) from Adafruit.
-2. While holding down the BOOTSEL button on the Pi Pico, connect the usb cable to your computer.
-3. It should be visible as a USB drive as RPI-RP2. Copy the downloaded `flash_nuke.uf2` into it. This will wipe any firmware in the Pico. Be sure to backup any files in your Pico.
-
-## Development instructions
-
-- Turn on the module (eurorack power)
-- Plug in the usb to the pico (yes it won't damage the pico)
-
-### Developing with VSCode
-
-Use VSCode with the plugin MicroPico
-
-Use the commands while developing:
-
-- Delete all files from pico
-- Upload project files to pico
-- Run
 
 ## MCP 4725 lookup table
 
