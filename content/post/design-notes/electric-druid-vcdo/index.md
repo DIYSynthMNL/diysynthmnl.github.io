@@ -13,6 +13,7 @@ tags:
     - Wavetable
     - Electric Druid
 status: Prototype built, incomplete design notes
+weight: 3
 ---
 [Module GitHub Link](https://github.com/DIYSynthMNL/Eurorack-Electric-Druid-VCDO1)
 
