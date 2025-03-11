@@ -127,9 +127,9 @@ A much better circuit for glide and bitcrush
 
 ## Schematic
 
-![Schematic rev0.1.5 p1](images/0.1.5_schem_1.jpg.jpg)
+![Schematic rev0.1.5 p1](images/0.1.5_schem_1.jpg)
 
-![Schematic rev0.1.5 p2](images/0.1.5_schem_2.jpg.jpg)
+![Schematic rev0.1.5 p2](images/0.1.5_schem_2.jpg)
 
 ## Conclusion
 
