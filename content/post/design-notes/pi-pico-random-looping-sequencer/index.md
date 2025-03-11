@@ -2,7 +2,7 @@
 title: "Pi Pico Random Looping Sequencer"
 description: 
 date: 2025-03-08T09:50:14Z
-image: images/DSC06774.jpg
+image: images/DSC06786.jpg
 categories:
     - Design Notes
 tags:
@@ -13,16 +13,22 @@ tags:
     - Pi Pico
 weight: 1
 status: In development
-draft: true
 ---
+This module is licensed under the [MIT License](https://opensource.org/licenses/MIT)
 
-[Module GitHub link](https://github.com/DIYSynthMNL/Pi-Pico-Random-Looping-Sequencer-Firmware)
+[Module GitHub link](https://github.com/DIYSynthMNL/Pi-Pico-Random-Looping-Sequencer)
 
 ## A random control voltage and trigger/gate sequencer Eurorack module
 
 This module is a random CV and trigger/gate sequencer with a built in quantizer with predefined scales. An upgrade from my [first random sequencer module](https://github.com/NeoRecasata/RandomLoopingSequencer).
 
 Built with the Pi Pico. Coded in Python.
+
+![Prototype plugged In](images/DSC06774.jpg)
+
+![Prototype Front](images/DSC06786.jpg)
+
+![Back](images/DSC06789.jpg) ![Side](images/DSC06790.jpg) ![Back](images/DSC06791.jpg) ![Back](images/DSC06792.jpg)
 
 ## Inspiration
 
@@ -34,7 +40,7 @@ Also, I've taken some code from the [EuroPi](https://github.com/Allen-Synthesis/
 - [x] Prototype
 - [ ] Schematic
 - [ ] CV input code
-- [ ] Random triggers
+- [x] Random triggers
 - [ ] A better menu system
 - [ ] Better logic, moving the rotary encoder while its running will make the sequencer glitch
 
@@ -83,10 +89,16 @@ This callback function will only be called when a submenu's selected value has b
 - Digital output
 - Analog CV output
 
+## Starting fresh (Preparing the pico for the firmware)
+
+1. Download [flash_nuke.uf2](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython#flash-resetting-uf2-3083182) from Adafruit.
+2. While holding down the BOOTSEL button on the Pi Pico, connect the usb cable to your computer.
+3. It should be visible as a USB drive as RPI-RP2. Copy the downloaded `flash_nuke.uf2` into it. This will wipe any firmware in the Pico. Be sure to backup any files in your Pico.
+
 ## Development instructions
 
 - Turn on the module (eurorack power)
-- Plug in the usb (yes it won't damage the pico)
+- Plug in the usb to the pico (yes it won't damage the pico)
 
 ### Developing with VSCode
 
