@@ -38,7 +38,7 @@ Also, I've taken some code from the [EuroPi](https://github.com/Allen-Synthesis/
 ## TODO
 
 - [x] Prototype
-- [ ] Schematic
+- [x] Schematic
 - [ ] CV input code
 - [x] Random triggers
 - [ ] A better menu system
@@ -52,16 +52,72 @@ Also, I've taken some code from the [EuroPi](https://github.com/Allen-Synthesis/
 - Rotary Encoder
 - A random cv sequencer
 - A random trigger/gate sequencer
+- Trigger length based on clock input
 - Output cv quantized based on scale chosen
 - 4 Analog parameter knobs with inputs
 
 ## IO
 
 - 4 Analog inputs with attenuation and offset knobs (serving as control knobs if no input is connected)
-- Trig in
-- Digital input
-- Digital output
-- Analog CV output
+- Clock/trigger input
+- Digital input (unused)
+- Trigger output
+- vOct output
+
+## Menu choices
+
+- Scale/Mode
+- CV Probability
+- Trigger Probability
+- Trigger length (0 to 100% of clock)
+- Number of steps (2 to 16 (You can modify the max steps in the code))
+- Octaves (the number of octaves it should range from (1 to 5))
+- Starting note (note 1 to 12)
+- CV sequence erase toggle
+- Trigger sequence erase toggle
+- Test CV scale/sequence toggle (it will run through the current scale chosen ascending)
+- Tuning CV scale/sequence toggle (to help you tune your vco)
+
+## How it randomizes
+
+Every high clock pulse, the current step will be changed randomly depending on the probability.
+
+The algorithm simply does the following:
+
+It selects a random note from the current scale chosen.
+Then it decides if the current step will be overwritten by the random note based on the probability.
+
+```python
+def randomly_change_current_step_cv() -> None:
+    # get random index of scale chosen
+    random_scale_index = random.randint(0, len(current_12bit_scale) - 1)
+    # set cv from scale list
+    if generate_boolean_with_probability(cv_probability_of_change):
+        # print("change cv")
+        cv_sequence[current_step] = current_12bit_scale[random_scale_index]
+
+
+def randomly_change_step_trigger() -> None:
+    global trigger_sequence
+    trig_on_or_off = random.randint(0, 1)
+    if generate_boolean_with_probability(trigger_probability_of_change):
+        trigger_sequence[current_step] = trig_on_or_off
+
+
+def generate_boolean_with_probability(probability: float) -> bool:
+    """
+    Returns True or False based on the given probability.
+
+    :param probability: The probability of returning True, in the range [0, 100].
+    :type probability: float
+    :return: True with probability `probability`, False otherwise.
+    :rtype: bool
+    """
+    if not 0 <= probability <= 100:
+        raise ValueError("Probability must be between 0 and 100")
+
+    return random.random() * 100 <= probability
+```
 
 ## Schematic
 
@@ -72,13 +128,21 @@ You can ommit the fourth cv input, you just have to adjust the code.
 
 ![Schematic](images/pi-pico-random-looping-sequencer-schematic-rev-0.1.0.jpg)
 
-## Starting fresh (Preparing the pico for the firmware)
+## Programming instructions
+
+### Starting fresh (Preparing the pico for the firmware)
 
 1. Download [flash_nuke.uf2](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython#flash-resetting-uf2-3083182) from Adafruit.
 2. While holding down the BOOTSEL button on the Pi Pico, connect the usb cable to your computer.
 3. It should be visible as a USB drive as RPI-RP2. Copy the downloaded `flash_nuke.uf2` into it. This will wipe any firmware in the Pico. Be sure to backup any files in your Pico.
 
+### Uploading main.py and lib
+
+You can use Thonny IDE or VSCode with the Micropico plugin.
+
 ## Development instructions
+
+If you need to program the pico while it is connected to eurorack power, you can.
 
 - Turn on the module (eurorack power)
 - Plug in the usb to the pico (yes it won't damage the pico)
