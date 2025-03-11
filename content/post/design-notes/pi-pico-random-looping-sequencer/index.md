@@ -38,7 +38,7 @@ Also, I've taken some code from the [EuroPi](https://github.com/Allen-Synthesis/
 ## TODO
 
 - [x] Prototype
-- [ ] Schematic
+- [x] Schematic
 - [ ] CV input code
 - [x] Random triggers
 - [ ] A better menu system
