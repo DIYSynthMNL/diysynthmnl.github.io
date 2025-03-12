@@ -24,6 +24,10 @@ This module is a random CV and trigger/gate sequencer with a built in quantizer 
 
 Built with the Pi Pico. Coded in Python.
 
+## Demo
+
+{{< youtube u1J9JrJe1Y0>}}
+
 ![Prototype plugged In](images/DSC06774.jpg)
 
 ![Prototype Front](images/DSC06786.jpg)
