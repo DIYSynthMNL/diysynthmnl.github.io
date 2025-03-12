@@ -47,6 +47,10 @@ Take a look at these other resources from Electric Druid:
 - [VCDO page](https://electricdruid.net/voltage-controlled-digital-oscillator-vcdo1/)
 - [VCDO shop page](https://electricdruid.net/product/vcdo-wavetable-oscillator/)
 
+## Demo
+
+{{< youtube yKsauSLsSGY>}}
+
 ## Module Features
 
 - 2 Oscillators
