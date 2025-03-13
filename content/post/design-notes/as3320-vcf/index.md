@@ -81,9 +81,9 @@ This module is a Low Pass VCF using the AS3320 chip I bought from Electric Druid
 
 ## Schematic
 
-![Schematic: core](images/3320-VCF-Schematic-Rev0.1.4_3.jpg)
+![Schematic: core](images/3320-VCF_Schematic-Rev-0.1.5_3.jpg)
 
-![Schematic: controls](images/3320-VCF-Schematic-Rev0.1.4_2.jpg)
+![Schematic: controls](images/3320-VCF_Schematic-Rev-0.1.5_2.jpg)
 
 ## Conclusion
 
