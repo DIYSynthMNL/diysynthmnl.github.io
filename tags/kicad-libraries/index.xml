@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KiCad Libraries on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/kicad-libraries/</link><description>Recent content in KiCad Libraries on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/kicad-libraries/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding Symbols, Footprints, and Libraries in Kicad</title><link>https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/</guid><description>&lt;h2 id="adding-libraries">Adding Libraries
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/adding_libraries.png"
+width="777"
+height="360"
+srcset="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/adding_libraries_hu_84e3f313af8cd1e.png 480w, https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/adding_libraries_hu_96262df224da1aa6.png 1024w"
+loading="lazy"
+alt="adding_libraries.png"
+class="gallery-image"
+data-flex-grow="215"
+data-flex-basis="518px"
+>&lt;/p>
+&lt;h3 id="symbol-libraries">Symbol Libraries
+&lt;/h3>&lt;ul>
+&lt;li>Make sure you put the library in a folder that you would not delete. Not in your downloads folder.&lt;/li>
+&lt;li>Click add existing library to table&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/symbol_libraries.png"
+width="1021"
+height="689"
+srcset="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/symbol_libraries_hu_ea31bc7160f20252.png 480w, https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/symbol_libraries_hu_75934cb6d2ed18ff.png 1024w"
+loading="lazy"
+alt="symbol_libraries.png"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="355px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Browse to your &lt;code>.sym&lt;/code> or &lt;code>.lib&lt;/code> file within your folder and click ok&lt;/li>
+&lt;/ul>
+&lt;h3 id="footprint-libraries">Footprint Libraries
+&lt;/h3>&lt;ul>
+&lt;li>Make sure you put the library in a folder that you would not delete. Not in your downloads folder.&lt;/li>
+&lt;li>Click add existing library to table&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/footprint_libraries.png"
+width="1009"
+height="680"
+srcset="https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/footprint_libraries_hu_1b11b0c8bf489424.png 480w, https://diysynthmnl.github.io/p/adding-symbols-footprints-and-libraries-in-kicad/footprint_libraries_hu_255d522939c5c70a.png 1024w"
+loading="lazy"
+alt="footprint_libraries.png"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="356px"
+>&lt;/p>
+&lt;ul>
+&lt;li>Browse to your .pretty folder and select it. Then click ok.&lt;/li>
+&lt;/ul>
+&lt;h2 id="adding-footprints">Adding footprints
+&lt;/h2>&lt;p>To be continued&amp;hellip;&lt;/p></description></item></channel></rss>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Filter on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/filter/</link><description>Recent content in Filter on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:18 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/filter/index.xml" rel="self" type="application/rss+xml"/><item><title>AS3320 VCF</title><link>https://diysynthmnl.github.io/p/as3320-vcf/</link><pubDate>Fri, 29 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/as3320-vcf/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06861.jpg" alt="Featured image of post AS3320 VCF" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3320-VCF" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;h2 id="todo">TODO
+&lt;/h2>&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Schematic&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Prototype&lt;/li>
+&lt;li>PCB Design&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction
+&lt;/h2>&lt;p>This module is a Low Pass VCF using the AS3320 chip I bought from Electric Druid.&lt;/p>
+&lt;h2 id="module-images">Module Images
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06861.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06861_hu_ac07170cf66b7f4.jpg 480w, https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06861_hu_57624e598a557f36.jpg 1024w"
+loading="lazy"
+alt="Front"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06863.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06863_hu_c00a7f61623ca0ba.jpg 480w, https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06863_hu_dc094cc9a47c8448.jpg 1024w"
+loading="lazy"
+alt="Back"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+> &lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06864.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06864_hu_149be57ccda33210.jpg 480w, https://diysynthmnl.github.io/p/as3320-vcf/images/DSC06864_hu_a17178a9d2ebaf70.jpg 1024w"
+loading="lazy"
+alt="Side"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+>&lt;/p>
+&lt;h2 id="demo">Demo
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/V5NmFUjbHUY"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="module-features">Module Features
+&lt;/h2>&lt;h2 id="design-notes">Design Notes
+&lt;/h2>&lt;h3 id="resources">Resources
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.coolaudio.com/docs/Cool%20Audio_Data_Sheet_V3320_VCF.pdf" target="_blank" rel="noopener"
+>V3320 datasheet from cool audio&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/wp-content/uploads/2017/06/AS3320.pdf" target="_blank" rel="noopener"
+>AS3320 datasheet&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/cem3320-filter-designs/" target="_blank" rel="noopener"
+>Electric Druid&amp;rsquo;s article about cem3320 filter designs&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/multimode-filters-part-1-reconfigurable-filters/" target="_blank" rel="noopener"
+>Electric Druid article about reconfigurable filters&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://electricdruid.net/multimode-filters-part-2-pole-mixing-filters/" target="_blank" rel="noopener"
+>Electric Druid article about pole mixing filters&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.eddybergman.com/2020/03/synthesizer-build-part-23-digisound-80.html" target="_blank" rel="noopener"
+>Eddy Bergman&amp;rsquo;s digisound 80 build&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://note.com/solder_state/n/n372399e1a0f2" target="_blank" rel="noopener"
+>Hagiwo’s circuit&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="reddit-help-question">Reddit help question
+&lt;/h3>&lt;blockquote>
+&lt;p>Eurorack 3320 Low Pass VCF Design Help Needed: Electrolytics for AC Coupling? And some other design questions.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/ac_coupling_cap.png"
+width="2066"
+height="1160"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/ac_coupling_cap_hu_5e28439515948748.png 480w, https://diysynthmnl.github.io/p/as3320-vcf/ac_coupling_cap_hu_92dd73f3b8ca520a.png 1024w"
+loading="lazy"
+alt="ac_coupling_cap"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="427px"
+>&lt;/p>
+&lt;p>Hi there! I’m designing a Eurorack 3320 LP VCF based on the AS3320 chips I got from Electric Druid. I’ve tried my best to research before asking here but I came up sort of knowledge. I’d like to ask for your help! I’ve got a small quantity of these AS chips and I want to build them into Eurorack modules as correct as possible.
+The datasheet for the 3320 uses an electrolytic cap on its output. I’ve read that there are downsides when using (polarized capacitors) &lt;a class="link" href="https://northcoastsynthesis.com/news/electrolytics-for-ac-coupling/" target="_blank" rel="noopener"
+>electrolytics for AC coupling&lt;/a>.
+One suggestion that the article said is this: “Use two polarized electrolytic capacitors back to back, with or without some kind of DC bias applied to the centre, or parallel diodes that attempt to limit reverse voltage.”
+I’m not quite sure what’s the best way to handle this.
+&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-3320-VCF/blob/main/Schematic%20PDFs/3320-VCF-Schematic-Rev0.1.0.pdf" target="_blank" rel="noopener"
+>My current schematic&lt;/a> applying the two polarized capacitors back to back.
+Some other questions that popped up in my head:&lt;/p>
+&lt;ol>
+&lt;li>Based on the datasheet circuit, the output of the 3320 is DC (0V to VCC*0.43)?&lt;/li>
+&lt;li>Should the 3320’s audio input be AC coupled as well?&lt;/li>
+&lt;li>What voltages does the 3320 expect at its audio inputs?&lt;/li>
+&lt;li>Circuits I saw online have inverting buffers before the 3320’s audio input. Why is this necessary? Why invert them?&lt;/li>
+&lt;/ol>
+&lt;p>I appreciate the help!&lt;/p>
+&lt;p>u/halifax&amp;rsquo;s reply:&lt;/p>
+&lt;ol>
+&lt;li>The datasheet shows an output DC offset of between 5 V to 9 V with a typical value of 6.5 V with +-15V supply and 0 V input.&lt;/li>
+&lt;li>I haven&amp;rsquo;t seen AC coupling on the Mutable Ripples or Befaco BF-22. It seems that the common practice is to not AC couple for general inputs in Eurorack low pass filters.&lt;/li>
+&lt;li>The 3320 input is basically an Operational Transconductance Amplifier (OTA) which has a current input. Pin 1 is basically at ground. There is a hard current limit on the chip of 40mA for any pin. With the 91k input resistor and assuming a +-5V VCO input you get a really small current of around +- 0.055 mA.&lt;/li>
+&lt;li>Generally you want to keep your pass band (e.g. the part below the cutoff of a low pass) to be in phase with your original signal. If you are looking at snippets of some larger schematic there may be an inverting stage upstream that they are inverting back from. Something like an inverting mixer that combines a few signals that needs to be inverted back again so that the output is in phase with the input signal.
+On your schematic I would only include the AC coupling before the Pro-one output buffer and since you know that it&amp;rsquo;s positively biased you don&amp;rsquo;t need the back-to-back caps. The feedback signal needs to be AC coupled. I would skip the inverter input, input AC coupling and change the output inverter to a buffer and get rid of that AC coupling since that is handled in the previous stage.&lt;/li>
+&lt;/ol>&lt;/blockquote>
+&lt;h2 id="schematic">Schematic
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/images/3320-VCF_Schematic-Rev-0.1.5_3.jpg"
+width="3307"
+height="2339"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/images/3320-VCF_Schematic-Rev-0.1.5_3_hu_60f367150acd82b8.jpg 480w, https://diysynthmnl.github.io/p/as3320-vcf/images/3320-VCF_Schematic-Rev-0.1.5_3_hu_62cae2a93f584b92.jpg 1024w"
+loading="lazy"
+alt="Schematic: core"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="339px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/as3320-vcf/images/3320-VCF_Schematic-Rev-0.1.5_2.jpg"
+width="2339"
+height="1654"
+srcset="https://diysynthmnl.github.io/p/as3320-vcf/images/3320-VCF_Schematic-Rev-0.1.5_2_hu_11c8cb6b4b7d1cb4.jpg 480w, https://diysynthmnl.github.io/p/as3320-vcf/images/3320-VCF_Schematic-Rev-0.1.5_2_hu_31bacff9cdd61459.jpg 1024w"
+loading="lazy"
+alt="Schematic: controls"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="339px"
+>&lt;/p>
+&lt;h2 id="conclusion">Conclusion
+&lt;/h2>&lt;p>If you&amp;rsquo;d like to build this module, I have provided a 3D printed front panel file in the repo. I used readily available green perfboard. The components should line up with the perfboard&amp;rsquo;s holes. The panel was made using benjiaomodular&amp;rsquo;s &lt;a class="link" href="https://github.com/benjiaomodular/EuroPanelMaker" target="_blank" rel="noopener"
+>europanelmaker&lt;/a>.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Europi on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/europi/</link><description>Recent content in Europi on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/europi/index.xml" rel="self" type="application/rss+xml"/><item><title>Europi Build</title><link>https://diysynthmnl.github.io/p/europi-build/</link><pubDate>Mon, 15 Jan 2024 12:11:43 +0000</pubDate><guid>https://diysynthmnl.github.io/p/europi-build/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/europi-build/DSC06874.jpg" alt="Featured image of post Europi Build" />&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_front.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_front_hu_2cdafe3e77bf5e82.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_front_hu_aefeaf2c2a3d014f.jpg 1024w"
+loading="lazy"
+alt="Europi Built!"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_side.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_side_hu_2dfb41c50f02741.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_side_hu_2c346397eff64a51.jpg 1024w"
+loading="lazy"
+alt="Side View"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_dissassembled.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_dissassembled_hu_6372ee81ea14de21.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_dissassembled_hu_2610243717f5010e.jpg 1024w"
+loading="lazy"
+alt="Europi Dissasembled"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_back.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_back_hu_89f255fa0c678db3.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_back_hu_20f51a00fd472eec.jpg 1024w"
+loading="lazy"
+alt="Back View"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_side_no_panel.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_side_no_panel_hu_4218d701d1dd62cf.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_side_no_panel_hu_7927eacad2d15e36.jpg 1024w"
+loading="lazy"
+alt="Side View"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_front_no_panel.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_front_no_panel_hu_cb0469d4ac0ac3d5.jpg 480w, https://diysynthmnl.github.io/p/europi-build/europi_front_no_panel_hu_f83b11d01cdba970.jpg 1024w"
+loading="lazy"
+alt="Front No Panel"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;h2 id="programming-the-europi">Programming the EuroPi
+&lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/Allen-Synthesis/EuroPi/blob/main/software/programming_instructions.md" target="_blank" rel="noopener"
+>https://github.com/Allen-Synthesis/EuroPi/blob/main/software/programming_instructions.md&lt;/a>&lt;/p>
+&lt;h2 id="using-the-smaller-version-of-the-pi-pico">Using the smaller version of the Pi Pico
+&lt;/h2>&lt;h3 id="change-pins-on-europipy">Change pins on europi.py
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/original_pin_assignments.png"
+width="289"
+height="349"
+srcset="https://diysynthmnl.github.io/p/europi-build/original_pin_assignments_hu_3c368eab87d109e3.png 480w, https://diysynthmnl.github.io/p/europi-build/original_pin_assignments_hu_5a61de0a3f82272.png 1024w"
+loading="lazy"
+alt="Original Europi Pin Assignments"
+class="gallery-image"
+data-flex-grow="82"
+data-flex-basis="198px"
+>&lt;/p>
+&lt;ul>
+&lt;li>I2C OLED pins 0, 1&lt;/li>
+&lt;li>Extra I2C pins 2, 3&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Pin assignments&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_DIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">22&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_AIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">26&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">27&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">28&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">20&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV3&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">16&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV4&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">17&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV5&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">18&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV6&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">19&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_USB_CONNECTED&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">24&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="original-pi-pico-pinouts">Original Pi Pico Pinouts
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/pi_pico_pinout.png"
+width="1999"
+height="1316"
+srcset="https://diysynthmnl.github.io/p/europi-build/pi_pico_pinout_hu_64fbb1d776911b54.png 480w, https://diysynthmnl.github.io/p/europi-build/pi_pico_pinout_hu_32cd5df102b40350.png 1024w"
+loading="lazy"
+alt="Pi Pico Pinout"
+class="gallery-image"
+data-flex-grow="151"
+data-flex-basis="364px"
+>&lt;/p>
+&lt;h3 id="pi-pico-super-mini-pinout">Pi Pico Super Mini pinout
+&lt;/h3>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/RP2040-Zero-details-7.jpg"
+width="960"
+height="1029"
+srcset="https://diysynthmnl.github.io/p/europi-build/RP2040-Zero-details-7_hu_69462bc5083441e3.jpg 480w, https://diysynthmnl.github.io/p/europi-build/RP2040-Zero-details-7_hu_36ff58ddc797adcd.jpg 1024w"
+loading="lazy"
+alt="Pi Pico Super Mini Pinout"
+class="gallery-image"
+data-flex-grow="93"
+data-flex-basis="223px"
+>&lt;/p>
+&lt;h3 id="edited-europipy-pin-assignments-for-pi-pico-super-mini-to-test">Edited europi.py pin assignments for Pi Pico Super Mini (to test)
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Pin assignments&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_DIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_AIN&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">26&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">27&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_K2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">28&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">7&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_B2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">8&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV3&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">11&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV4&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">12&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV5&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">13&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_CV6&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">14&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">PIN_USB_CONNECTED&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">24&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="oled">OLED
+&lt;/h4>&lt;ul>
+&lt;li>SDA - GP0&lt;/li>
+&lt;li>SCL - GP1&lt;/li>
+&lt;/ul>
+&lt;h4 id="extra-i2c-pins">Extra I2C pins
+&lt;/h4>&lt;ul>
+&lt;li>Extra I2C 2, 3&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-does-the-outputs-work">How does the outputs work?
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/europi-build/europi_pwm_output_circuit.png"
+width="1800"
+height="1356"
+srcset="https://diysynthmnl.github.io/p/europi-build/europi_pwm_output_circuit_hu_e0c7156abc17a819.png 480w, https://diysynthmnl.github.io/p/europi-build/europi_pwm_output_circuit_hu_2901ccb7c79ec0cd.png 1024w"
+loading="lazy"
+alt="Europi output circuit"
+class="gallery-image"
+data-flex-grow="132"
+data-flex-basis="318px"
+>&lt;/p>
+&lt;p>How I understand it:&lt;/p>
+&lt;ul>
+&lt;li>The Pi Pico outputs a 100kHz PWM pulse&lt;/li>
+&lt;li>The output circuit filters the pulses like a DAC would do it using an RC filter.&lt;/li>
+&lt;li>When the pulse width is low (0%) the voltage is low&lt;/li>
+&lt;li>When the pulse width is high (100%) the voltage is high&lt;/li>
+&lt;/ul>
+&lt;h2 id="mcp6004-pinout">MCP6004 Pinout
+&lt;/h2>&lt;p>VDD = POSITIVE, 5v
+VSS = NEGATIVE, 0v or GND&lt;/p></description></item></channel></rss>

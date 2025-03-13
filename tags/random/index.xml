@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Random on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/random/</link><description>Recent content in Random on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/random/index.xml" rel="self" type="application/rss+xml"/><item><title>Pi Pico Random Looping Sequencer</title><link>https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/</link><pubDate>Sat, 08 Mar 2025 09:50:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06786.jpg" alt="Featured image of post Pi Pico Random Looping Sequencer" />&lt;p>This module is licensed under the &lt;a class="link" href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener"
+>MIT License&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Pi-Pico-Random-Looping-Sequencer" target="_blank" rel="noopener"
+>Module GitHub link&lt;/a>&lt;/p>
+&lt;h2 id="a-random-control-voltage-and-triggergate-sequencer-eurorack-module">A random control voltage and trigger/gate sequencer Eurorack module
+&lt;/h2>&lt;p>This module is a random CV and trigger/gate sequencer with a built in quantizer with predefined scales. An upgrade from my &lt;a class="link" href="https://github.com/NeoRecasata/RandomLoopingSequencer" target="_blank" rel="noopener"
+>first random sequencer module&lt;/a>.&lt;/p>
+&lt;p>Built with the Pi Pico. Coded in Python.&lt;/p>
+&lt;h2 id="demo">Demo
+&lt;/h2>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/u1J9JrJe1Y0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06774.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06774_hu_40c881002bab48f1.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06774_hu_f0fa57e7f35df413.jpg 1024w"
+loading="lazy"
+alt="Prototype plugged In"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06786.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06786_hu_df35ab7b2f3caa36.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06786_hu_dd7e28b28d94c0e1.jpg 1024w"
+loading="lazy"
+alt="Prototype Front"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06789.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06789_hu_7126b48f244b56cc.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06789_hu_39a4d5a5340723fd.jpg 1024w"
+loading="lazy"
+alt="Back"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+> &lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06790.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06790_hu_50d1c9289b9948de.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06790_hu_5aac237d88440a2d.jpg 1024w"
+loading="lazy"
+alt="Side"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+> &lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06791.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06791_hu_6e50a9b0c2c813ae.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06791_hu_67ffce4993b624f6.jpg 1024w"
+loading="lazy"
+alt="Back"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+> &lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06792.jpg"
+width="6026"
+height="4024"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06792_hu_ecc24f1653108ff0.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/DSC06792_hu_bf4b69e6cfddc084.jpg 1024w"
+loading="lazy"
+alt="Back"
+class="gallery-image"
+data-flex-grow="149"
+data-flex-basis="359px"
+>&lt;/p>
+&lt;h2 id="inspiration">Inspiration
+&lt;/h2>&lt;p>I&amp;rsquo;ve taken some inspiration from the popular random module called the Turing Machine.
+Also, I&amp;rsquo;ve taken some code from the &lt;a class="link" href="https://github.com/Allen-Synthesis/EuroPi" target="_blank" rel="noopener"
+>EuroPi&lt;/a>, specifically the analog reader for the CV inputs and knobs.&lt;/p>
+&lt;h2 id="todo">TODO
+&lt;/h2>&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Prototype&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Schematic&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> CV input code&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Random triggers&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> A better menu system&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Better logic, moving the rotary encoder while its running will make the sequencer glitch&lt;/li>
+&lt;/ul>
+&lt;h2 id="features">Features
+&lt;/h2>&lt;h3 id="basic-features">Basic features
+&lt;/h3>&lt;ul>
+&lt;li>128x64 oled screen&lt;/li>
+&lt;li>Rotary Encoder&lt;/li>
+&lt;li>A random cv sequencer&lt;/li>
+&lt;li>A random trigger/gate sequencer&lt;/li>
+&lt;li>Trigger length based on clock input&lt;/li>
+&lt;li>Output cv quantized based on scale chosen&lt;/li>
+&lt;li>4 Analog parameter knobs with inputs&lt;/li>
+&lt;/ul>
+&lt;h2 id="io">IO
+&lt;/h2>&lt;ul>
+&lt;li>4 Analog inputs with attenuation and offset knobs (serving as control knobs if no input is connected)&lt;/li>
+&lt;li>Clock/trigger input&lt;/li>
+&lt;li>Digital input (unused)&lt;/li>
+&lt;li>Trigger output&lt;/li>
+&lt;li>vOct output&lt;/li>
+&lt;/ul>
+&lt;h2 id="menu-choices">Menu choices
+&lt;/h2>&lt;ul>
+&lt;li>Scale/Mode&lt;/li>
+&lt;li>CV Probability&lt;/li>
+&lt;li>Trigger Probability&lt;/li>
+&lt;li>Trigger length (0 to 100% of clock)&lt;/li>
+&lt;li>Number of steps (2 to 16 (You can modify the max steps in the code))&lt;/li>
+&lt;li>Octaves (the number of octaves it should range from (1 to 5))&lt;/li>
+&lt;li>Starting note (note 1 to 12)&lt;/li>
+&lt;li>CV sequence erase toggle&lt;/li>
+&lt;li>Trigger sequence erase toggle&lt;/li>
+&lt;li>Test CV scale/sequence toggle (it will run through the current scale chosen ascending)&lt;/li>
+&lt;li>Tuning CV scale/sequence toggle (to help you tune your vco)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-it-randomizes">How it randomizes
+&lt;/h2>&lt;p>Every high clock pulse, the current step will be changed randomly depending on the probability.&lt;/p>
+&lt;p>The algorithm simply does the following:&lt;/p>
+&lt;p>It selects a random note from the current scale chosen.
+Then it decides if the current step will be overwritten by the random note based on the probability.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">randomly_change_current_step_cv&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># get random index of scale chosen&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">random_scale_index&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">randint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">current_12bit_scale&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># set cv from scale list&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">generate_boolean_with_probability&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">cv_probability_of_change&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># print(&amp;#34;change cv&amp;#34;)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cv_sequence&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">current_step&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">current_12bit_scale&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">random_scale_index&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">randomly_change_step_trigger&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">global&lt;/span> &lt;span class="n">trigger_sequence&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">trig_on_or_off&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">randint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">generate_boolean_with_probability&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">trigger_probability_of_change&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">trigger_sequence&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">current_step&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">trig_on_or_off&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">generate_boolean_with_probability&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">probability&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">float&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">bool&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> Returns True or False based on the given probability.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :param probability: The probability of returning True, in the range [0, 100].
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :type probability: float
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :return: True with probability `probability`, False otherwise.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> :rtype: bool
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2"> &amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">probability&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">raise&lt;/span> &lt;span class="ne">ValueError&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Probability must be between 0 and 100&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">random&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">100&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">probability&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="schematic">Schematic
+&lt;/h2>&lt;p>I used a clone of the Pi Pico (Pi Pico Lite Black 16MB).&lt;/p>
+&lt;p>If you don&amp;rsquo;t have it available, you can use an original Pi Pico. You just have to change some pin assignments. The clone I found has an additional ADC pin (GP29).
+You can ommit the fourth cv input, you just have to adjust the code.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/pi-pico-random-looping-sequencer-schematic-rev-0.1.0.jpg"
+width="3508"
+height="2480"
+srcset="https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/pi-pico-random-looping-sequencer-schematic-rev-0.1.0_hu_a95fd58c05f55dae.jpg 480w, https://diysynthmnl.github.io/p/pi-pico-random-looping-sequencer/images/pi-pico-random-looping-sequencer-schematic-rev-0.1.0_hu_a03582c0dc8f3a64.jpg 1024w"
+loading="lazy"
+alt="Schematic"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="339px"
+>&lt;/p>
+&lt;h2 id="programming-instructions">Programming instructions
+&lt;/h2>&lt;h3 id="starting-fresh-preparing-the-pico-for-the-firmware">Starting fresh (Preparing the pico for the firmware)
+&lt;/h3>&lt;ol>
+&lt;li>Download &lt;a class="link" href="https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython#flash-resetting-uf2-3083182" target="_blank" rel="noopener"
+>flash_nuke.uf2&lt;/a> from Adafruit.&lt;/li>
+&lt;li>While holding down the BOOTSEL button on the Pi Pico, connect the usb cable to your computer.&lt;/li>
+&lt;li>It should be visible as a USB drive as RPI-RP2. Copy the downloaded &lt;code>flash_nuke.uf2&lt;/code> into it. This will wipe any firmware in the Pico. Be sure to backup any files in your Pico.&lt;/li>
+&lt;/ol>
+&lt;h3 id="uploading-mainpy-and-lib">Uploading main.py and lib
+&lt;/h3>&lt;p>You can use Thonny IDE or VSCode with the Micropico plugin.&lt;/p>
+&lt;h2 id="development-instructions">Development instructions
+&lt;/h2>&lt;p>If you need to program the pico while it is connected to eurorack power, you can.&lt;/p>
+&lt;ul>
+&lt;li>Turn on the module (eurorack power)&lt;/li>
+&lt;li>Plug in the usb to the pico (yes it won&amp;rsquo;t damage the pico)&lt;/li>
+&lt;/ul>
+&lt;h3 id="developing-with-vscode">Developing with VSCode
+&lt;/h3>&lt;p>Use VSCode with the plugin MicroPico&lt;/p>
+&lt;p>Use the commands while developing:&lt;/p>
+&lt;ul>
+&lt;li>Delete all files from pico&lt;/li>
+&lt;li>Upload project files to pico&lt;/li>
+&lt;li>Run&lt;/li>
+&lt;/ul>
+&lt;h3 id="menu-system">Menu system
+&lt;/h3>&lt;p>I cobbled up some code to help me make a menu system for this project. Its still in the early stages of development. I still need to clean it up.
+You can take a look at my &lt;code>menu.py&lt;/code> code in the GitHub repo for this project.&lt;/p>
+&lt;h4 id="how-the-menu-system-works">How the menu system works
+&lt;/h4>&lt;p>SETTING SUBMENUS:&lt;/p>
+&lt;p>First, you would have to create instances of submenus in your main program.
+Then you can put those instances in a list called &lt;code>submenu_list&lt;/code>.
+Lastly, call the &lt;code>set_submenus()&lt;/code>.&lt;/p>
+&lt;p>MAKING THE DISPLAY AND ENCODER DO ITS JOB:&lt;/p>
+&lt;p>Call &lt;code>loop_main_menu(update_main_program_values_callback=[callback_function])&lt;/code> in a while True loop.
+The callback function is for updating the variables used in your main program. It is discussed more in detail below.&lt;/p>
+&lt;p>GETTING DATA FROM THE MENU SYSTEM INTO YOUR MAIN PROGRAM:&lt;/p>
+&lt;p>This library only handles the &amp;ldquo;front end&amp;rdquo; of your main python program, handling user interaction with the display and the rotary encoder.
+It is designed to hold data but you should have variables in your main program so you can access the data easily.
+For example, you need to get data from a submenu: you would need to call &lt;code>get_submenu_list()&lt;/code> in order to update the main program&amp;rsquo;s variables.
+To help you update your main program&amp;rsquo;s variables from the submenus, you will need to provide a callback function in your main program (example: &lt;code>update_values()&lt;/code>).
+This callback function will only be called when a submenu&amp;rsquo;s selected value has been changed (user pressed the encoder button).&lt;/p>
+&lt;h2 id="mcp-4725-lookup-table">MCP 4725 lookup table
+&lt;/h2>&lt;p>The optimal lowest voltage should not be 0. The MCP4725 cannot output exactly 0v for some reason. Your tuning will not be exact when the value is 0.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>note no&lt;/th>
+&lt;th>12 bit value&lt;/th>
+&lt;th>voltage output&lt;/th>
+&lt;th>keyboard note (example only)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>0&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>68&lt;/td>
+&lt;td>0.0830078125&lt;/td>
+&lt;td>C#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>136&lt;/td>
+&lt;td>0.166015625&lt;/td>
+&lt;td>D&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>204&lt;/td>
+&lt;td>0.2490234375&lt;/td>
+&lt;td>D#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>4&lt;/td>
+&lt;td>272&lt;/td>
+&lt;td>0.33203125&lt;/td>
+&lt;td>E&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>5&lt;/td>
+&lt;td>340&lt;/td>
+&lt;td>0.4150390625&lt;/td>
+&lt;td>F&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>6&lt;/td>
+&lt;td>408&lt;/td>
+&lt;td>0.498046875&lt;/td>
+&lt;td>F#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>7&lt;/td>
+&lt;td>476&lt;/td>
+&lt;td>0.5810546875&lt;/td>
+&lt;td>G&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>8&lt;/td>
+&lt;td>544&lt;/td>
+&lt;td>0.6640625&lt;/td>
+&lt;td>G#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>9&lt;/td>
+&lt;td>612&lt;/td>
+&lt;td>0.7470703125&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>10&lt;/td>
+&lt;td>680&lt;/td>
+&lt;td>0.830078125&lt;/td>
+&lt;td>A#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11&lt;/td>
+&lt;td>748&lt;/td>
+&lt;td>0.9130859375&lt;/td>
+&lt;td>B&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>12&lt;/td>
+&lt;td>816&lt;/td>
+&lt;td>0.99609375&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>13&lt;/td>
+&lt;td>884&lt;/td>
+&lt;td>1.079101563&lt;/td>
+&lt;td>C#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>14&lt;/td>
+&lt;td>952&lt;/td>
+&lt;td>1.162109375&lt;/td>
+&lt;td>D&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>15&lt;/td>
+&lt;td>1020&lt;/td>
+&lt;td>1.245117188&lt;/td>
+&lt;td>D#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>16&lt;/td>
+&lt;td>1088&lt;/td>
+&lt;td>1.328125&lt;/td>
+&lt;td>E&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>17&lt;/td>
+&lt;td>1156&lt;/td>
+&lt;td>1.411132813&lt;/td>
+&lt;td>F&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>18&lt;/td>
+&lt;td>1224&lt;/td>
+&lt;td>1.494140625&lt;/td>
+&lt;td>F#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>19&lt;/td>
+&lt;td>1292&lt;/td>
+&lt;td>1.577148438&lt;/td>
+&lt;td>G&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>20&lt;/td>
+&lt;td>1360&lt;/td>
+&lt;td>1.66015625&lt;/td>
+&lt;td>G#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>21&lt;/td>
+&lt;td>1428&lt;/td>
+&lt;td>1.743164063&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>22&lt;/td>
+&lt;td>1496&lt;/td>
+&lt;td>1.826171875&lt;/td>
+&lt;td>A#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>23&lt;/td>
+&lt;td>1564&lt;/td>
+&lt;td>1.909179688&lt;/td>
+&lt;td>B&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>24&lt;/td>
+&lt;td>1632&lt;/td>
+&lt;td>1.9921875&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>25&lt;/td>
+&lt;td>1700&lt;/td>
+&lt;td>2.075195313&lt;/td>
+&lt;td>C#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>26&lt;/td>
+&lt;td>1768&lt;/td>
+&lt;td>2.158203125&lt;/td>
+&lt;td>D&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>27&lt;/td>
+&lt;td>1836&lt;/td>
+&lt;td>2.241210938&lt;/td>
+&lt;td>D#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>28&lt;/td>
+&lt;td>1904&lt;/td>
+&lt;td>2.32421875&lt;/td>
+&lt;td>E&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>29&lt;/td>
+&lt;td>1972&lt;/td>
+&lt;td>2.407226563&lt;/td>
+&lt;td>F&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>30&lt;/td>
+&lt;td>2040&lt;/td>
+&lt;td>2.490234375&lt;/td>
+&lt;td>F#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>31&lt;/td>
+&lt;td>2108&lt;/td>
+&lt;td>2.573242188&lt;/td>
+&lt;td>G&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>32&lt;/td>
+&lt;td>2176&lt;/td>
+&lt;td>2.65625&lt;/td>
+&lt;td>G#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>33&lt;/td>
+&lt;td>2244&lt;/td>
+&lt;td>2.739257813&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>34&lt;/td>
+&lt;td>2312&lt;/td>
+&lt;td>2.822265625&lt;/td>
+&lt;td>A#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>35&lt;/td>
+&lt;td>2380&lt;/td>
+&lt;td>2.905273438&lt;/td>
+&lt;td>B&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>36&lt;/td>
+&lt;td>2448&lt;/td>
+&lt;td>2.98828125&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>37&lt;/td>
+&lt;td>2516&lt;/td>
+&lt;td>3.071289063&lt;/td>
+&lt;td>C#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>38&lt;/td>
+&lt;td>2584&lt;/td>
+&lt;td>3.154296875&lt;/td>
+&lt;td>D&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>39&lt;/td>
+&lt;td>2652&lt;/td>
+&lt;td>3.237304688&lt;/td>
+&lt;td>D#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>40&lt;/td>
+&lt;td>2720&lt;/td>
+&lt;td>3.3203125&lt;/td>
+&lt;td>E&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>41&lt;/td>
+&lt;td>2788&lt;/td>
+&lt;td>3.403320313&lt;/td>
+&lt;td>F&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>42&lt;/td>
+&lt;td>2856&lt;/td>
+&lt;td>3.486328125&lt;/td>
+&lt;td>F#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>43&lt;/td>
+&lt;td>2924&lt;/td>
+&lt;td>3.569335938&lt;/td>
+&lt;td>G&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>44&lt;/td>
+&lt;td>2992&lt;/td>
+&lt;td>3.65234375&lt;/td>
+&lt;td>G#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>45&lt;/td>
+&lt;td>3060&lt;/td>
+&lt;td>3.735351563&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>46&lt;/td>
+&lt;td>3128&lt;/td>
+&lt;td>3.818359375&lt;/td>
+&lt;td>A#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>47&lt;/td>
+&lt;td>3196&lt;/td>
+&lt;td>3.901367188&lt;/td>
+&lt;td>B&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>48&lt;/td>
+&lt;td>3264&lt;/td>
+&lt;td>3.984375&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>49&lt;/td>
+&lt;td>3332&lt;/td>
+&lt;td>4.067382813&lt;/td>
+&lt;td>C#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>50&lt;/td>
+&lt;td>3400&lt;/td>
+&lt;td>4.150390625&lt;/td>
+&lt;td>D&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>51&lt;/td>
+&lt;td>3468&lt;/td>
+&lt;td>4.233398438&lt;/td>
+&lt;td>D#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>52&lt;/td>
+&lt;td>3536&lt;/td>
+&lt;td>4.31640625&lt;/td>
+&lt;td>E&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>53&lt;/td>
+&lt;td>3604&lt;/td>
+&lt;td>4.399414063&lt;/td>
+&lt;td>F&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>54&lt;/td>
+&lt;td>3672&lt;/td>
+&lt;td>4.482421875&lt;/td>
+&lt;td>F#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>55&lt;/td>
+&lt;td>3740&lt;/td>
+&lt;td>4.565429688&lt;/td>
+&lt;td>G&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>56&lt;/td>
+&lt;td>3808&lt;/td>
+&lt;td>4.6484375&lt;/td>
+&lt;td>G#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>57&lt;/td>
+&lt;td>3876&lt;/td>
+&lt;td>4.731445313&lt;/td>
+&lt;td>A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>58&lt;/td>
+&lt;td>3944&lt;/td>
+&lt;td>4.814453125&lt;/td>
+&lt;td>A#&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>59&lt;/td>
+&lt;td>4012&lt;/td>
+&lt;td>4.897460938&lt;/td>
+&lt;td>B&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>60&lt;/td>
+&lt;td>4080&lt;/td>
+&lt;td>4.98046875&lt;/td>
+&lt;td>C&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Ladik R110 Clone</title><link>https://diysynthmnl.github.io/p/ladik-r110-clone/</link><pubDate>Wed, 13 Dec 2023 10:13:27 +0000</pubDate><guid>https://diysynthmnl.github.io/p/ladik-r110-clone/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side.jpg" alt="Featured image of post Ladik R110 Clone" />&lt;h2 id="idea">Idea
+&lt;/h2>&lt;p>I stumbled upon a video that relies on this clocked random trigger/gates module from State Azure.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/6JeZR13dLLI"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>Here’s his patch notes:&lt;/p>
+&lt;p>Main clock from Pamela&amp;rsquo;s New Workout, into Ladik R-110 for the random trigs/gates which are essential to this patch.
+(Synth voice - Plaits)Trig 1 goes through a Ladik S-090 Skipper at around 60%, which also is being CV modulated via Modbox with a very slow LFO. Trig 1 is then sent to Sinfonion Arp Clock input, which is also copied out to Delta V envelope generator slow atk/decay (decay modulated gently via one of Ochd&amp;rsquo;s outputs). This envelope controls Plaits output via the built into VCA in Delta V. Sinfonion Arp 1v/Oct Out goes into Plaits (arp set to either random or Brownian). Plaits Timbre is modulated via URA A-Out, Harm by B-Out, and Morph by another channel of Ochd. Plaits also receives fast sine LFO FM for vibrato. Plaits then goes through Belgrad, with v/oct modulated by second channel of Delta V 50%atk, 50%dcy (same Trig 1 activates it), which is also copied to Ochd CV input to modulated Ochd speed everytime the envelope is triggered. Belgrad set to 6th filter, FM on, 60% resonance. Span modulated via slow LFO of Ochd, and FM modulated by fast LFO of Ochd.
+(Vangelis lead - 4ms Ensemble) Gate1 from Ladik R-110 into Skipper set around 50% (CV modulated) via slow LFO from Modbox. Output from Skipper goes to Quadigy channel 1 and copied to Trig input on RndStep, copied again to Time Warp Gate input. Quadigy Ch.1 Envelope to Tallin linear input, slow attack/decay. Input into Tallin 4ms Ensemble Out B, Balance set to 70%, Twist, Warp and Cross FM all at 0%. Twist opens up via Ch.2 of Quadigy which is tied to Ch.1&amp;rsquo;s trigger, and also has a slow atk/decay for the synth swell. RndStep Bipolar output (attentuated) goes to Ch.3 on Sinfonion, with Ch.3 Sin output going into Time Warp (for Slew), out from Time Warp into 4ms Ensemble 1v/oct input.
+(Chainsaw Bass) Ch.1 Output from Sinfonion provides notes, into Chainsaw 1v/oct input. Chainsaw then into Freak filter (Steiner-Parker model), cutoff modulated via Ch. 4 of Quadigy which is triggered by PNW very slow/divided pulse into Skipper.
+(Chainsaw 2-note chords) Sinfonion chord Out 1 and Out 3 to second Chainsaw, then out to dual Cinnamon filters set to low-pass, with soft/slow LFO over cutoff via Batumi.
+(Sinfonion Key Change) Sinfonion song set to just two steps = E7 to A Major. In1 on Sinfonion set to advance through steps via Trig. Trig comes from PNW slow/heavily divided gate into another Skipper, then to Sinfonion.
+Lubadh plays back improvised recording from the Wavestate.&lt;/p>
+&lt;h2 id="heres-the-modules-details">Here’s the module’s details
+&lt;/h2>&lt;p>R-110 “Random clocked trigs/gates w. disable input” module for eurorack / Doepfer A100 system.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front.jpg"
+width="125"
+height="800"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front_hu_7c05d9bc785c3976.jpg 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front_hu_67c6819936e6d65d.jpg 1024w"
+loading="lazy"
+alt="ladik_r-110_front"
+class="gallery-image"
+data-flex-grow="15"
+data-flex-basis="37px"
+> &lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side.jpg"
+width="283"
+height="800"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side_hu_c55ec88be4b4143a.jpg 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side_hu_88f6a926cb5ea17b.jpg 1024w"
+loading="lazy"
+alt="ladik_r-110_side"
+class="gallery-image"
+data-flex-grow="35"
+data-flex-basis="84px"
+>&lt;/p>
+&lt;p>From top to bottom:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Disable input jack + LED (if active, gate outputs stays in its current state or are all switched off – selectable by internal jumper)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Clock input jack + LED&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Trig 1/2/3 output jacks and LEDs (probability = 1/3 so in average every third input clock makes output trigger)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gate 1/2/3 output jacks and LEDs (probability = 1/3 so in average every third clock toggles output)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If there will be say 300 input clocks every trig output makes around 100 trigs. All outputs has same probability but they are independently evaluated (so they can fire together sometimes or individually sometimes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gates are processed similar way but there is “probability of change state”, if clock is evaluated as “valid” to change output state then output toggles (if currently is off then becomes on and vice versa) making gates “quantized” by their lengths to input clocks (gates starts and ends at clocks).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Configurable parameters&lt;/strong> (by internal jumpers, just one of first five should be set):&lt;/p>
+&lt;p>1. &lt;strong>jumper 1&lt;/strong>: fixed &lt;strong>1ms&lt;/strong> trig outputs&lt;/p>
+&lt;p>2. &lt;strong>jumper 2&lt;/strong>: fixed &lt;strong>200ms&lt;/strong> trig outputs&lt;/p>
+&lt;p>3. &lt;strong>jumper 3&lt;/strong>: variable trigger outputs length – &lt;strong>quarter&lt;/strong> of input gate length&lt;/p>
+&lt;p>4. &lt;strong>jumper 4&lt;/strong>: variable trigger outputs length – &lt;strong>half&lt;/strong> of input gate length&lt;/p>
+&lt;p>5. &lt;strong>jumper 5&lt;/strong>: variable trigger outputs length – &lt;strong>equal&lt;/strong> to input gate length&lt;/p>
+&lt;p>6. &lt;strong>independent &amp;ldquo;disable&amp;rdquo; jumper&lt;/strong> (behind T1 output jack): gate outputs stays in its current state (jumper not set ) or are all switched off (jumper set) at active “disable” input signal&lt;/p>
+&lt;h2 id="circuit-design">Circuit Design
+&lt;/h2>&lt;p>It uses what looks like an ATMEL chip which probably is an ATMEGA. We can use an Arduino Nano for this module.&lt;/p>
+&lt;blockquote>
+&lt;p>We have to protect the Arduino from 10vpp levels as a safety precaution. Head on to &lt;a class="link" href="../protecting-digital-io-from-eurorack-levels/" >Protecting Digital IO From Eurorack Levels&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h3 id="eurorack-voltage-levels">Eurorack voltage levels
+&lt;/h3>&lt;ul>
+&lt;li>CV -5v to +5v, 10vpp&lt;/li>
+&lt;li>Clocks, Gates, Triggers are TTL level which is 0v to 5v (logic level)&lt;/li>
+&lt;/ul>
+&lt;p>With this in mind, additional circuitry will be needed in order to protect i/o and convert Eurorack levels to Arduino levels.&lt;/p>
+&lt;h3 id="the-modules-inputs-are-as-follows">The module’s inputs are as follows
+&lt;/h3>&lt;ul>
+&lt;li>Gate hold (disable input) input, logic level&lt;/li>
+&lt;li>Clock input, logic level&lt;/li>
+&lt;/ul>
+&lt;p>We can protect the inputs using this circuit:
+&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit.png"
+width="1138"
+height="815"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit_hu_c6260ed3d42f6f.png 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit_hu_55c4860e7b94e933.png 1024w"
+loading="lazy"
+alt="clock_input_circuit"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="335px"
+>&lt;/p>
+&lt;h3 id="the-modules-outputs-are-as-follows">The module’s outputs are as follows
+&lt;/h3>&lt;ul>
+&lt;li>Trigger out 1/2/3&lt;/li>
+&lt;li>Gate out 1/2/3&lt;/li>
+&lt;/ul>
+&lt;p>We can have additional protection for the outputs in case the user accidentally plugs in a 10vpp voltage source, but we can worry about that later on. For now we’ll just directly connect the Arduino to the output jacks.&lt;/p>
+&lt;h2 id="how-the-module-works">How the module works
+&lt;/h2>&lt;p>Let’s start by listing the module’s i/o:&lt;/p>
+&lt;ul>
+&lt;li>Inputs
+&lt;ul>
+&lt;li>Clock input&lt;/li>
+&lt;li>Gate hold input&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Outputs
+&lt;ul>
+&lt;li>Triggers 1/2/3
+&lt;ul>
+&lt;li>Probability of firing is 1 out of 3 clock pulses&lt;/li>
+&lt;li>Can be set to a fixed value (1ms, 200ms) or variable (1/4, 1/2, 1/1, of clock input pulses) depending on the clock length by jumpers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Gates 1/2/3
+&lt;ul>
+&lt;li>Probability of firing is 1 out of 3 clock pulses&lt;/li>
+&lt;li>Gates will be the same as the clock pulse length&lt;/li>
+&lt;li>If the gate hold input is high, their current state will be held&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

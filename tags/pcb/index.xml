@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PCB on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/pcb/</link><description>Recent content in PCB on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/pcb/index.xml" rel="self" type="application/rss+xml"/><item><title>Kikit Multiboard Workflow</title><link>https://diysynthmnl.github.io/p/kikit-multiboard-workflow/</link><pubDate>Fri, 16 Feb 2024 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/kikit-multiboard-workflow/</guid><description>&lt;p>KiCad terminal Command&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">kikit&lt;/span> &lt;span class="n">separate&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">source&lt;/span> &lt;span class="s2">&amp;#34;annotation; ref: B3&amp;#34;&lt;/span> &lt;span class="o">^&lt;/span> &lt;span class="s2">&amp;#34;C:\Users\Acer\Desktop\Synth DIY\KiCad Designs\EuroBusboard\EuroBusboard.kicad_pcb&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;C:\Users\Acer\Desktop\Synth DIY\KiCad Designs\EuroBusboard\eurobusboard_jst_8.kicad_pcb&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>How to use it?&lt;/p>
+&lt;ol>
+&lt;li>Open KiCad Command Prompt&lt;/li>
+&lt;li>Enter the command&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">kikit&lt;/span> &lt;span class="n">separate&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">source&lt;/span> &lt;span class="s2">&amp;#34;annotation; ref: [Board marker reference (ex. A)]&amp;#34;&lt;/span> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;[Path to .kicad_pcb to separate]&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;[Path to save separated .kicad_pcb]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>My Kicad Board Setup Settings</title><link>https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1.png" alt="Featured image of post My Kicad Board Setup Settings" />&lt;h2 id="board-stackup---physical-stackup">Board Stackup - Physical stackup
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1.png"
+width="987"
+height="590"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1_hu_46f1e08c5729f5b0.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/1_hu_8d1a44ebeb265bdc.png 1024w"
+loading="lazy"
+alt="board_setup_1"
+class="gallery-image"
+data-flex-grow="167"
+data-flex-basis="401px"
+>&lt;/p>
+&lt;h2 id="board-stackup---board-finish">Board Stackup - Board Finish
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/2.png"
+width="986"
+height="586"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/2_hu_1a061c0227cc37b9.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/2_hu_8c9185c1c7ba8c4c.png 1024w"
+loading="lazy"
+alt="board_setup_2"
+class="gallery-image"
+data-flex-grow="168"
+data-flex-basis="403px"
+>&lt;/p>
+&lt;h2 id="board-stackup---solder-maskpaste">Board Stackup - Solder Mask/Paste
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/3.png"
+width="988"
+height="594"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/3_hu_edda6bb63073ec1a.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/3_hu_d5446a87f13e2c8.png 1024w"
+loading="lazy"
+alt="board_setup_3"
+class="gallery-image"
+data-flex-grow="166"
+data-flex-basis="399px"
+>&lt;/p>
+&lt;h2 id="text--graphics---defaults">Text &amp;amp; Graphics - Defaults
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/4.png"
+width="1095"
+height="590"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/4_hu_a1eba0e35b879bd7.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/4_hu_3fe15ee4441ba6a0.png 1024w"
+loading="lazy"
+alt="board_setup_4"
+class="gallery-image"
+data-flex-grow="185"
+data-flex-basis="445px"
+>&lt;/p>
+&lt;h2 id="design-rules---constraints">Design Rules - Constraints
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/5.png"
+width="1100"
+height="588"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/5_hu_63f32e9593c70355.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/5_hu_f8c0853cd8fc8a50.png 1024w"
+loading="lazy"
+alt="board_setup_5"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="448px"
+>&lt;/p>
+&lt;h2 id="design-rules---pre-defined-sizes">Design Rules - Pre-defined Sizes
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/6.png"
+width="1102"
+height="589"
+srcset="https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/6_hu_9e20ea767670f5b8.png 480w, https://diysynthmnl.github.io/p/my-kicad-board-setup-settings/6_hu_f2c7f4c91d00db44.png 1024w"
+loading="lazy"
+alt="board_setup_6"
+class="gallery-image"
+data-flex-grow="187"
+data-flex-basis="449px"
+>&lt;/p></description></item><item><title>Eurorack Panel Making With KiCad, LibreCad, and Inkscape</title><link>https://diysynthmnl.github.io/p/eurorack-panel-making-with-kicad-librecad-and-inkscape/</link><pubDate>Wed, 27 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/eurorack-panel-making-with-kicad-librecad-and-inkscape/</guid><description>&lt;h2 id="my-workflow-on-making-eurorack-front-panels">My workflow on making Eurorack front panels
+&lt;/h2>&lt;ol>
+&lt;li>Lock footprints on control board where the controls are soldered by using the lock feature in KiCad so that they won’t be moved when placing the panel hole footprints.&lt;/li>
+&lt;li>Make the panel board outline. Be sure to align it with the control board. The footprints of the control board should be locked or else you’ll have a hard time moving the panel board out of the control board.&lt;/li>
+&lt;li>Place panel hole footprints on the control board footprints. Alignment points on the panel hole footprints should snap to the control board footprints.&lt;/li>
+&lt;li>When finished placing panel hole footprints. Triple check alignment then highlight the whole front panel and move it out of the control board. Make sure that the locked footprints are not selectable - unselect locked footprints check box in selection filter.&lt;/li>
+&lt;li>To make it easy to make the front panel graphics, I use LibreCad to mark holes and clearances for the graphics. In KiCad, you will use the dimension tool to mark where the holes are and then transfer it manually to LibreCad. I’ll explore exporting to svg in kicad soon.&lt;/li>
+&lt;li>Next I’ll import the hole guide svg to inkscape to place front panel graphics.&lt;/li>
+&lt;li>Use black for the objects and paths, use white for the background.&lt;/li>
+&lt;li>Convert all objects to paths (text are objects). This is important because KiCad can’t render those objects.&lt;/li>
+&lt;li>Keep the board outline, you’ll need it for alignment later in KiCad.&lt;/li>
+&lt;li>The svg created in Inkscape should be ready for importing.&lt;/li>
+&lt;li>Import the svg by clicking file &amp;gt; import &amp;gt; graphics (ctrl + shift + F) and import your svg file.&lt;/li>
+&lt;li>Double click the front panel graphics and make the layer front silkscreen.&lt;/li>
+&lt;li>Align the graphic to the front panel board outline.&lt;/li>
+&lt;/ol></description></item><item><title>Pcb Track Widths, Vias, and Pads</title><link>https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/</guid><description>&lt;p>To jumpstart your PCB design I will list my recommended track widths for module PCBs.
+If you&amp;rsquo;re going for another manufacturer, be sure to know their capabilities.&lt;/p>
+&lt;ul>
+&lt;li>PCBWAY capabilities &lt;a class="link" href="https://www.pcbway.com/capabilities.html" target="_blank" rel="noopener"
+>https://www.pcbway.com/capabilities.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="track-widths">Track widths
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.reddit.com/r/synthdiy/comments/y1be7v/pcb_design_how_do_you_pick_trace_widths_for_your/" target="_blank" rel="noopener"
+>https://www.reddit.com/r/synthdiy/comments/y1be7v/pcb_design_how_do_you_pick_trace_widths_for_your/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>0.02” for signal, 0.127mm, or 5 mils&lt;/li>
+&lt;li>0.035” for power, 0.889mm,&lt;/li>
+&lt;li>PCBWAY: 4mil minimum, recommends a trace width above 6mils (0.15mm)&lt;/li>
+&lt;/ul>
+&lt;h2 id="minimum-track-clearance">Minimum track clearance
+&lt;/h2>&lt;ul>
+&lt;li>PCBWAY: 4mil minimum, recommended 6mil&lt;/li>
+&lt;/ul>
+&lt;h2 id="vias">Vias
+&lt;/h2>&lt;ul>
+&lt;li>0.2mm inner dia, 0.5mm outer dia&lt;/li>
+&lt;li>PCBWAY: Min drill size is 0.2mm, max drill is 6.3mm. Any holes greater than 6.3mm or smaller than 0.3mm will be subject to extra charges.&lt;/li>
+&lt;/ul>
+&lt;h2 id="pads">Pads
+&lt;/h2>&lt;ul>
+&lt;li>For my longer pad footprints I use 2.54mm L * 1.6mm W with a 0.8mm hole&lt;/li>
+&lt;li>PCBWAY: Min drill size is 0.2mm, max drill is 6.3mm. Any holes greater than 6.3mm or smaller than 0.3mm will be subject to extra charges.&lt;/li>
+&lt;/ul>
+&lt;h2 id="text">Text
+&lt;/h2>&lt;ul>
+&lt;li>PCBWAY: min character width is 0.15mm&lt;/li>
+&lt;/ul>
+&lt;h2 id="panelization">Panelization
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization.png"
+width="927"
+height="116"
+srcset="https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization_hu_19ccea16225c43fe.png 480w, https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization_hu_ac5203cd3476eb53.png 1024w"
+loading="lazy"
+alt="panelization.png"
+class="gallery-image"
+data-flex-grow="799"
+data-flex-basis="1917px"
+>&lt;/p></description></item></channel></rss>

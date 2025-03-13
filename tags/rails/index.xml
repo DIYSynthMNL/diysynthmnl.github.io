@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rails on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/rails/</link><description>Recent content in Rails on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:18 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>Building my first eurorack case</title><link>https://diysynthmnl.github.io/p/building-my-first-eurorack-case/</link><pubDate>Sat, 16 Dec 2023 06:07:14 +0000</pubDate><guid>https://diysynthmnl.github.io/p/building-my-first-eurorack-case/</guid><description>&lt;h2 id="dimensions">Dimensions
+&lt;/h2>&lt;h3 id="rails">Rails
+&lt;/h3>&lt;p>The rails I got are not specifically made for Eurorack but I tested it with some blank panels and it works.
+I used M3 square nuts and 6mm long screws. 6mm screws are a bit short so I should get 8mm long ones.&lt;/p>
+&lt;h3 id="length">Length
+&lt;/h3>&lt;p>&lt;a class="link" href="https://synthracks.com/blog/eurorack-rails-diy-guide" target="_blank" rel="noopener"
+>https://synthracks.com/blog/eurorack-rails-diy-guide&lt;/a>
+The standard rail lengths are as follows:&lt;/p>
+&lt;ul>
+&lt;li>60HP - 304.8mm&lt;/li>
+&lt;li>84HP - 426.72mm&lt;/li>
+&lt;li>104HP - 528.32mm&lt;/li>
+&lt;li>110HP - 558.8mm&lt;/li>
+&lt;li>126HP - 640.08mm&lt;/li>
+&lt;li>168HP - 853.44mm&lt;/li>
+&lt;/ul>
+&lt;p>I will go for a single row 84HP case. So that would be a length of 426.72mm. I would cut a bit more so it would give me some room for error. I will go for a length of 427mm.
+I have to cut my rails. I have a total of 90cm to cut. I could only cut it into two so I went for 84HP.&lt;/p>
+&lt;h3 id="depth">Depth
+&lt;/h3>&lt;ul>
+&lt;li>From the top of the rails it should measure about 10cm or more depending on your power supply&lt;/li>
+&lt;/ul>
+&lt;h3 id="module-height">Module height
+&lt;/h3>&lt;p>I fit two blank modules on my rails and then measured the height between rails. I got 13.4 cm.&lt;/p>
+&lt;h2 id="design-inspiration">Design Inspiration
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_1.png"
+width="455"
+height="294"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_1_hu_e7cf9afdc295e4f4.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_1_hu_299ace3c7b8a1ddf.png 1024w"
+loading="lazy"
+alt="inspo_1"
+class="gallery-image"
+data-flex-grow="154"
+data-flex-basis="371px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_2.png"
+width="433"
+height="344"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_2_hu_3f8c8b5d2c244836.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/inspo_2_hu_20004071db1be258.png 1024w"
+loading="lazy"
+alt="inspo_2"
+class="gallery-image"
+data-flex-grow="125"
+data-flex-basis="302px"
+>&lt;/p>
+&lt;p>I chose this design because I like how you can change the orientation.&lt;/p>
+&lt;h3 id="my-design">My design
+&lt;/h3>&lt;p>I used google Sketchup to draft what I had in mind then I used Librecad to draw the side panel guides so I could transfer the template easily.&lt;/p>
+&lt;p>Initial drafts:&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_1.png"
+width="1032"
+height="1145"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_1_hu_45352cac9141afb.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_1_hu_e5724881f0f27e29.png 1024w"
+loading="lazy"
+alt="side_profile_1"
+class="gallery-image"
+data-flex-grow="90"
+data-flex-basis="216px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_2.png"
+width="1521"
+height="1293"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_2_hu_fa412d575a96d6b6.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_2_hu_1ccad6e990baec54.png 1024w"
+loading="lazy"
+alt="side_profile_2"
+class="gallery-image"
+data-flex-grow="117"
+data-flex-basis="282px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_3.png"
+width="1047"
+height="904"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_3_hu_bae135a15b3a22b4.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_3_hu_2c87e4c8be2d17ca.png 1024w"
+loading="lazy"
+alt="side_profile_3"
+class="gallery-image"
+data-flex-grow="115"
+data-flex-basis="277px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_4.png"
+width="1908"
+height="1357"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_4_hu_4a130a1b1b6fcf91.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_4_hu_6b0b5818a74eae63.png 1024w"
+loading="lazy"
+alt="side_profile_4"
+class="gallery-image"
+data-flex-grow="140"
+data-flex-basis="337px"
+> &lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6.png"
+width="1250"
+height="877"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_a6dbebe9de8a8b53.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_e1dcd4a444194865.png 1024w"
+loading="lazy"
+alt="side_profile_5"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;p>Final Design:&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6.png"
+width="1250"
+height="877"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_a6dbebe9de8a8b53.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_6_hu_e1dcd4a444194865.png 1024w"
+loading="lazy"
+alt="side_profile_6"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_7.png"
+width="1252"
+height="880"
+srcset="https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_7_hu_b99f96e875fc0a8f.png 480w, https://diysynthmnl.github.io/p/building-my-first-eurorack-case/side_profile_7_hu_79be2e87734f1c85.png 1024w"
+loading="lazy"
+alt="side_profile_7"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="341px"
+>&lt;/p>
+&lt;p>I would recommend using half inch or 10 - 15 mm thick plywood I used scrap wood. Make sure to screw in your rails first with some blank panels or modules in order to keep error low.
+My workflow:&lt;/p>
+&lt;ul>
+&lt;li>I’ll cut the rails into two&lt;/li>
+&lt;li>Try them out with blanks&lt;/li>
+&lt;li>Measure the height
+&lt;ul>
+&lt;li>The height I measured was 13.4cm&lt;/li>
+&lt;li>Think of the wood panel design, either beveled view or not&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Design the side panels&lt;/li>
+&lt;li>Then cut wood panels&lt;/li>
+&lt;li>Build!&lt;/li>
+&lt;/ul>
+&lt;h3 id="some-resources">Some resources
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.youtube.com/watch?v=6mVbi8B3usY" target="_blank" rel="noopener"
+>DIY eurorack case part 1&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

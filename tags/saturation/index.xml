@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Saturation on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/saturation/</link><description>Recent content in Saturation on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/saturation/index.xml" rel="self" type="application/rss+xml"/><item><title>Multi Saturation Module</title><link>https://diysynthmnl.github.io/p/multi-saturation-module/</link><pubDate>Sun, 03 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/multi-saturation-module/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/DSC06849.jpg" alt="Featured image of post Multi Saturation Module" />&lt;p>&lt;a class="link" href="https://github.com/DIYSynthMNL/Eurorack-Multi-Saturation-Module" target="_blank" rel="noopener"
+>Module GitHub Link&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_front.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_front_hu_6bf43099349224c7.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_front_hu_af9acebf2c16162b.jpg 1024w"
+loading="lazy"
+alt="front"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_side.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_side_hu_2183d3199182e1bc.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_side_hu_d8a167d306382d00.jpg 1024w"
+loading="lazy"
+alt="side"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_hu_ae3ef56fd889039b.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_hu_ff2083dbb5e043a8.jpg 1024w"
+loading="lazy"
+alt="back"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_close.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_close_hu_37e833928c264dbc.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/prototype_module_back_close_hu_28bd7b073575690e.jpg 1024w"
+loading="lazy"
+alt="back"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+> &lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/proto_module_back.jpg"
+width="1088"
+height="1080"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/proto_module_back_hu_a156fa81c018b305.jpg 480w, https://diysynthmnl.github.io/p/multi-saturation-module/proto_module_back_hu_6151c8226695bf98.jpg 1024w"
+loading="lazy"
+alt="back"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+>&lt;/p>
+&lt;h2 id="some-background">Some background
+&lt;/h2>&lt;p>I’m designing a distortion/saturation modular synth module using different methods of distorting audio signals.
+This module is a combination of transformer, opto, and clipping distortion/saturation.&lt;/p>
+&lt;h2 id="revision-summary">Revision Summary
+&lt;/h2>&lt;ul>
+&lt;li>Schematic Revision 0.5 - an easier to read schematic - please note that there are some errors in this. The Eurorack power connector pins are backwards. Use this as a reference for the circuit design.&lt;/li>
+&lt;li>Schematic Revision 0.6 - multiboard layout (LATEST - working on circuit revisions)&lt;/li>
+&lt;li>PCB Revision 0.1 - revising in progress (working on rev 0.2)&lt;/li>
+&lt;/ul>
+&lt;h2 id="source-of-inspiration">Source of inspiration
+&lt;/h2>&lt;h3 id="diyres-colour-modules">DIYRe’s Colour Modules
+&lt;/h3>&lt;p>I got some ideas from DIYRe&amp;rsquo;s Colour modules. DIYRe is a company that produces DIY kits for professional audio recording equipment. Some of their product offerings include recording studio rackmount effects.&lt;/p>
+&lt;blockquote>
+&lt;p>The Colour Format&lt;br>
+Real analog plugins.&lt;br>
+&lt;a class="link" href="https://www.diyrecordingequipment.com/pages/the-colour-format" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/pages/the-colour-format&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Colour Module&lt;/td>
+&lt;td>What does it do?&lt;/td>
+&lt;td>What ideas did you get?&lt;/td>
+&lt;td>Link to page&lt;/td>
+&lt;td>Schematic&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CTX Transformer Colour&lt;/td>
+&lt;td>A transformer saturation module with a discrete opamp and a Cinemag audio transformer which has a 1:1 turns ratio.&lt;/td>
+&lt;td>Non-inverting amp to drive the transformer past what it can handle. Resistor before the transformer that isolates the opamp from the transformer.&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.diyrecordingequipment.com/products/ctx-cinemag-transformer-colour-mkii" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/products/ctx-cinemag-transformer-colour-mkii&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://cdn.shopify.com/s/files/1/0698/2265/files/CTX_mkII_Schematic.pdf?375" target="_blank" rel="noopener"
+>https://cdn.shopify.com/s/files/1/0698/2265/files/CTX_mkII_Schematic.pdf?375&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Colourphone&lt;/td>
+&lt;td>A telephone sound emulator. It uses a bandpass filter and a 1:1 turn ratio audio transformer.&lt;/td>
+&lt;td>I have a similar transformer which is a 600:600 ohm transformer. Resistor before the transformer that isolates it from the opamp.&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.diyrecordingequipment.com/products/colourphone-telephone-distortion-colour" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/products/colourphone-telephone-distortion-colour&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourphone_Schematic_1.3.pdf?8973696934571457842" target="_blank" rel="noopener"
+>https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourphone_Schematic_1.3.pdf?8973696934571457842&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Colourupter&lt;/td>
+&lt;td>An opto distortion module that is vactrol based.&lt;/td>
+&lt;td>Using a vactrol and the circuit around it. IC1c and IC1d only.&lt;/td>
+&lt;td>&lt;a class="link" href="https://www.diyrecordingequipment.com/products/colourupter" target="_blank" rel="noopener"
+>https://www.diyrecordingequipment.com/products/colourupter&lt;/a>&lt;/td>
+&lt;td>&lt;a class="link" href="https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourupter_Schematic_1.7.pdf?13355729951948932441" target="_blank" rel="noopener"
+>https://cdn.shopify.com/s/files/1/0698/2265/files/XQP_Colourupter_Schematic_1.7.pdf?13355729951948932441&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="other-sources">Other sources
+&lt;/h3>&lt;ul>
+&lt;li>Vactrol wet/dry mix from music thing modular’s spring reverb module
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.musicthing.co.uk/Spring-Reverb/" target="_blank" rel="noopener"
+>https://www.musicthing.co.uk/Spring-Reverb/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Eliot Sound Products &lt;a class="link" href="https://sound-au.com/" target="_blank" rel="noopener"
+>https://sound-au.com&lt;/a> - is a website full of audio articles that I’ve learned from. Go search for these articles, they’re great!
+&lt;ul>
+&lt;li>Designing With Op Amps&lt;/li>
+&lt;li>Audio Transformers&lt;/li>
+&lt;li>Soft Clipping&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="circuit-design">Circuit Design
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/rev_0.4_schematic.png"
+width="1518"
+height="1046"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/rev_0.4_schematic_hu_afc162cf9a12d1c8.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/rev_0.4_schematic_hu_dcde84798f4c5369.png 1024w"
+loading="lazy"
+alt="rev_0.4_schematic"
+class="gallery-image"
+data-flex-grow="145"
+data-flex-basis="348px"
+>&lt;/p>
+&lt;ul>
+&lt;li>I will update this section soon.&lt;/li>
+&lt;/ul>
+&lt;h3 id="stages">Stages
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Input gain stage (buffer only, see design note below)&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/input_buffer.png"
+width="399"
+height="240"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/input_buffer_hu_1c7b70c940391214.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/input_buffer_hu_8bbcabdf333cce16.png 1024w"
+loading="lazy"
+alt="input_buffer"
+class="gallery-image"
+data-flex-grow="166"
+data-flex-basis="399px"
+>&lt;/p>
+&lt;p>We must take into account the headroom of the op amp. The NE5532 can only output 2 volts less than the supply voltage. So for example, your supply voltage would be +/- 12V, your max output would be 10V based on the image below.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/vopp.png"
+width="1532"
+height="83"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/vopp_hu_b860d1041cd1add9.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/vopp_hu_da5f4422727645b9.png 1024w"
+loading="lazy"
+alt="vopp"
+class="gallery-image"
+data-flex-grow="1845"
+data-flex-basis="4429px"
+>&lt;/p>
+&lt;p>A buffer would suffice as the input stage. It would be nice to give the transformer more voltage but we wouldn’t be able to amplify the 10Vpp input to 12Vpp unless we use a +/- 15V supply.&lt;/p>
+&lt;p>I chose to use an NE5532 Op Amp because I believe it can drive outputs higher than TL07x.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Transformer Saturation&lt;/p>
+&lt;p>The transformer distortion works by oversaturating the transformer’s core past what it can handle. The transformer I used would normally be used in line audio signals. A 600:600 ohm transformer. We’re using Eurorack voltage which is around 10vpp so that would oversaturate the transformer.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/transformer_saturation_stage.png"
+width="602"
+height="337"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/transformer_saturation_stage_hu_b4f9c575eabaf3b0.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/transformer_saturation_stage_hu_2646089fedf28969.png 1024w"
+loading="lazy"
+alt="transformer_saturation_stage"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="428px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Vactrol Opto Electronic Saturation&lt;/p>
+&lt;p>The transformer’s output was low, I needed to add a non-inverting op amp with gain to bring the levels back to 10vpp for this stage.&lt;/p>
+&lt;p>I got this circuit from DIYRe’s Colourupter colour module which uses a Vactrol to clip the signal.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/vactrol_saturation_stage.png"
+width="823"
+height="378"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/vactrol_saturation_stage_hu_35fe7d0d89331e77.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/vactrol_saturation_stage_hu_b8de1546b8ed3e1a.png 1024w"
+loading="lazy"
+alt="vactrol_saturation_stage"
+class="gallery-image"
+data-flex-grow="217"
+data-flex-basis="522px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Soft Clipping Diode Saturation&lt;/p>
+&lt;p>I chose to place these diodes after the wet amplifier. It would be softer if I placed it before the U4A. I chained LEDs to the 1N4148s to get a softer clipping effect. LEDs alone would make saw waves looking like square waves.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/diode_clipping_stage.png"
+width="270"
+height="392"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/diode_clipping_stage_hu_f3f1f0776cb56c10.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/diode_clipping_stage_hu_51e3cf070de0bd8d.png 1024w"
+loading="lazy"
+alt="diode_clipping_stage"
+class="gallery-image"
+data-flex-grow="68"
+data-flex-basis="165px"
+>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Voltage controlled Vactrol Wet/Dry mix&lt;/p>
+&lt;p>I used my handmade Vactrol. I made it using a 5mm diffused red LED and a 5mm LDR enclosed with black heat shrink tubing. I crimped the ends so no light would leak in. 47k works for R17 with my Vactrol.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/wet_dry_mix.png"
+width="1055"
+height="512"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/wet_dry_mix_hu_8d7811b2c655ce11.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/wet_dry_mix_hu_e2b5375de43e0375.png 1024w"
+loading="lazy"
+alt="vactrol_wet_dry_mix"
+class="gallery-image"
+data-flex-grow="206"
+data-flex-basis="494px"
+>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="schematic-revisions">Schematic Revisions
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>Revision 0.2&lt;/p>
+&lt;ul>
+&lt;li>TODO
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Replace R5 with trimmer&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Test wet/dry mix on breadboard&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Input buffer biasing resistor&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Notes
+&lt;ul>
+&lt;li>The transformer saturation is very subtle on a mono synth&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.3&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>TODO&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Add gain trimmer to dry signal at U2B&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Scrap the single saturation and add diode clipping and the Colourupter, the transformer alone is too subtle&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> Test output gain stage&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.4&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Scrap output auto gain&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> add opto saturation&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> add soft clipping diodes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.5&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Multiboard layout&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Revision 0.6&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Fix amplitude difference on opto sat stage output.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="pcb-design">PCB Design
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_white.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_white_hu_50a079410596c098.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_white_hu_8ab0482745d218b9.png 1024w"
+loading="lazy"
+alt="pcb_rev_0.1_white"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>Dec 27, 2023 - Almost satisfied with the board design, rev0.1&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1.png"
+width="2560"
+height="1600"
+srcset="https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_hu_12c3a8fce4346c99.png 480w, https://diysynthmnl.github.io/p/multi-saturation-module/pcb_rev_0.1_hu_6d2f6cc32715243d.png 1024w"
+loading="lazy"
+alt="pcb_rev_0.1"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;p>Rev 0.1 in black&lt;/p>
+&lt;h3 id="pcb-revisions">PCB revisions
+&lt;/h3>&lt;ul>
+&lt;li>Todo for Revision 0.1
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Ground plane vias&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Front panel ground plane&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Double check hole sizes
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Trimmer&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Double check via sizes&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Round tracks&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Todo for Revision 0.2
+&lt;ul>
+&lt;li>Front panel
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Add keep out zone for led window zone fills for FCU and BCU - I had to Dremel it out for the revision 0.1 front panel board&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Enlarge switch holes for Dailywell switches&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Enlarge trimmer holes&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Change tilt knob silkscreen to “mix”&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Fix amplitude difference on opto sat output. The opto stage attenuates the signal from the transformer too much&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Revision 0.1 Board test notes
+&lt;ul>
+&lt;li>Voltage tests
+&lt;ul>
+&lt;li>Power rails after reverse protection diode I used a 1N4007 diode
+&lt;ul>
+&lt;li>V+ reads about 10V&lt;/li>
+&lt;li>V- reads about 11V&lt;/li>
+&lt;li>I might need to change the reverse protection diodes to Schottkys&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Music thing modular’s cv wet dry circuit has an optimal input of 0-5V control voltages. If 10Vpp was used, the middle of the cv level pot is zero. Fully clockwise, the cv would be in phase. Fully counter clockwise, the cv is inverted. This is simulated in falstad, the file is included in the falstad folder.&lt;/li>
+&lt;li>Gain trim is finicky. Turning on the Opto would attenuate the signal. Maybe this is caused by the variety of the vactrol, I think not all vactrols are equal. Opto gain/amplitude trim might be required. It might be a simple resistor value change within the circuit.&lt;/li>
+&lt;li>LEDs are not as bright as I want them.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

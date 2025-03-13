@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PCBWay on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/pcbway/</link><description>Recent content in PCBWay on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/pcbway/index.xml" rel="self" type="application/rss+xml"/><item><title>Pcb Track Widths, Vias, and Pads</title><link>https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/</link><pubDate>Sat, 23 Dec 2023 00:00:00 +0800</pubDate><guid>https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/</guid><description>&lt;p>To jumpstart your PCB design I will list my recommended track widths for module PCBs.
+If you&amp;rsquo;re going for another manufacturer, be sure to know their capabilities.&lt;/p>
+&lt;ul>
+&lt;li>PCBWAY capabilities &lt;a class="link" href="https://www.pcbway.com/capabilities.html" target="_blank" rel="noopener"
+>https://www.pcbway.com/capabilities.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="track-widths">Track widths
+&lt;/h2>&lt;p>&lt;a class="link" href="https://www.reddit.com/r/synthdiy/comments/y1be7v/pcb_design_how_do_you_pick_trace_widths_for_your/" target="_blank" rel="noopener"
+>https://www.reddit.com/r/synthdiy/comments/y1be7v/pcb_design_how_do_you_pick_trace_widths_for_your/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>0.02” for signal, 0.127mm, or 5 mils&lt;/li>
+&lt;li>0.035” for power, 0.889mm,&lt;/li>
+&lt;li>PCBWAY: 4mil minimum, recommends a trace width above 6mils (0.15mm)&lt;/li>
+&lt;/ul>
+&lt;h2 id="minimum-track-clearance">Minimum track clearance
+&lt;/h2>&lt;ul>
+&lt;li>PCBWAY: 4mil minimum, recommended 6mil&lt;/li>
+&lt;/ul>
+&lt;h2 id="vias">Vias
+&lt;/h2>&lt;ul>
+&lt;li>0.2mm inner dia, 0.5mm outer dia&lt;/li>
+&lt;li>PCBWAY: Min drill size is 0.2mm, max drill is 6.3mm. Any holes greater than 6.3mm or smaller than 0.3mm will be subject to extra charges.&lt;/li>
+&lt;/ul>
+&lt;h2 id="pads">Pads
+&lt;/h2>&lt;ul>
+&lt;li>For my longer pad footprints I use 2.54mm L * 1.6mm W with a 0.8mm hole&lt;/li>
+&lt;li>PCBWAY: Min drill size is 0.2mm, max drill is 6.3mm. Any holes greater than 6.3mm or smaller than 0.3mm will be subject to extra charges.&lt;/li>
+&lt;/ul>
+&lt;h2 id="text">Text
+&lt;/h2>&lt;ul>
+&lt;li>PCBWAY: min character width is 0.15mm&lt;/li>
+&lt;/ul>
+&lt;h2 id="panelization">Panelization
+&lt;/h2>&lt;p>&lt;img src="https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization.png"
+width="927"
+height="116"
+srcset="https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization_hu_19ccea16225c43fe.png 480w, https://diysynthmnl.github.io/p/pcb-track-widths-vias-and-pads/panelization_hu_ac5203cd3476eb53.png 1024w"
+loading="lazy"
+alt="panelization.png"
+class="gallery-image"
+data-flex-grow="799"
+data-flex-basis="1917px"
+>&lt;/p></description></item></channel></rss>

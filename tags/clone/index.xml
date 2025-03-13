@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Clone on DIYSynthMNL</title><link>https://diysynthmnl.github.io/tags/clone/</link><description>Recent content in Clone on DIYSynthMNL</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 13 Mar 2025 13:23:19 +0000</lastBuildDate><atom:link href="https://diysynthmnl.github.io/tags/clone/index.xml" rel="self" type="application/rss+xml"/><item><title>Ladik R110 Clone</title><link>https://diysynthmnl.github.io/p/ladik-r110-clone/</link><pubDate>Wed, 13 Dec 2023 10:13:27 +0000</pubDate><guid>https://diysynthmnl.github.io/p/ladik-r110-clone/</guid><description>&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side.jpg" alt="Featured image of post Ladik R110 Clone" />&lt;h2 id="idea">Idea
+&lt;/h2>&lt;p>I stumbled upon a video that relies on this clocked random trigger/gates module from State Azure.&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/6JeZR13dLLI"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>Here’s his patch notes:&lt;/p>
+&lt;p>Main clock from Pamela&amp;rsquo;s New Workout, into Ladik R-110 for the random trigs/gates which are essential to this patch.
+(Synth voice - Plaits)Trig 1 goes through a Ladik S-090 Skipper at around 60%, which also is being CV modulated via Modbox with a very slow LFO. Trig 1 is then sent to Sinfonion Arp Clock input, which is also copied out to Delta V envelope generator slow atk/decay (decay modulated gently via one of Ochd&amp;rsquo;s outputs). This envelope controls Plaits output via the built into VCA in Delta V. Sinfonion Arp 1v/Oct Out goes into Plaits (arp set to either random or Brownian). Plaits Timbre is modulated via URA A-Out, Harm by B-Out, and Morph by another channel of Ochd. Plaits also receives fast sine LFO FM for vibrato. Plaits then goes through Belgrad, with v/oct modulated by second channel of Delta V 50%atk, 50%dcy (same Trig 1 activates it), which is also copied to Ochd CV input to modulated Ochd speed everytime the envelope is triggered. Belgrad set to 6th filter, FM on, 60% resonance. Span modulated via slow LFO of Ochd, and FM modulated by fast LFO of Ochd.
+(Vangelis lead - 4ms Ensemble) Gate1 from Ladik R-110 into Skipper set around 50% (CV modulated) via slow LFO from Modbox. Output from Skipper goes to Quadigy channel 1 and copied to Trig input on RndStep, copied again to Time Warp Gate input. Quadigy Ch.1 Envelope to Tallin linear input, slow attack/decay. Input into Tallin 4ms Ensemble Out B, Balance set to 70%, Twist, Warp and Cross FM all at 0%. Twist opens up via Ch.2 of Quadigy which is tied to Ch.1&amp;rsquo;s trigger, and also has a slow atk/decay for the synth swell. RndStep Bipolar output (attentuated) goes to Ch.3 on Sinfonion, with Ch.3 Sin output going into Time Warp (for Slew), out from Time Warp into 4ms Ensemble 1v/oct input.
+(Chainsaw Bass) Ch.1 Output from Sinfonion provides notes, into Chainsaw 1v/oct input. Chainsaw then into Freak filter (Steiner-Parker model), cutoff modulated via Ch. 4 of Quadigy which is triggered by PNW very slow/divided pulse into Skipper.
+(Chainsaw 2-note chords) Sinfonion chord Out 1 and Out 3 to second Chainsaw, then out to dual Cinnamon filters set to low-pass, with soft/slow LFO over cutoff via Batumi.
+(Sinfonion Key Change) Sinfonion song set to just two steps = E7 to A Major. In1 on Sinfonion set to advance through steps via Trig. Trig comes from PNW slow/heavily divided gate into another Skipper, then to Sinfonion.
+Lubadh plays back improvised recording from the Wavestate.&lt;/p>
+&lt;h2 id="heres-the-modules-details">Here’s the module’s details
+&lt;/h2>&lt;p>R-110 “Random clocked trigs/gates w. disable input” module for eurorack / Doepfer A100 system.&lt;/p>
+&lt;p>&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front.jpg"
+width="125"
+height="800"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front_hu_7c05d9bc785c3976.jpg 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_front_hu_67c6819936e6d65d.jpg 1024w"
+loading="lazy"
+alt="ladik_r-110_front"
+class="gallery-image"
+data-flex-grow="15"
+data-flex-basis="37px"
+> &lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side.jpg"
+width="283"
+height="800"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side_hu_c55ec88be4b4143a.jpg 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/ladik_r-110_side_hu_88f6a926cb5ea17b.jpg 1024w"
+loading="lazy"
+alt="ladik_r-110_side"
+class="gallery-image"
+data-flex-grow="35"
+data-flex-basis="84px"
+>&lt;/p>
+&lt;p>From top to bottom:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Disable input jack + LED (if active, gate outputs stays in its current state or are all switched off – selectable by internal jumper)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Clock input jack + LED&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Trig 1/2/3 output jacks and LEDs (probability = 1/3 so in average every third input clock makes output trigger)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gate 1/2/3 output jacks and LEDs (probability = 1/3 so in average every third clock toggles output)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If there will be say 300 input clocks every trig output makes around 100 trigs. All outputs has same probability but they are independently evaluated (so they can fire together sometimes or individually sometimes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Gates are processed similar way but there is “probability of change state”, if clock is evaluated as “valid” to change output state then output toggles (if currently is off then becomes on and vice versa) making gates “quantized” by their lengths to input clocks (gates starts and ends at clocks).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Configurable parameters&lt;/strong> (by internal jumpers, just one of first five should be set):&lt;/p>
+&lt;p>1. &lt;strong>jumper 1&lt;/strong>: fixed &lt;strong>1ms&lt;/strong> trig outputs&lt;/p>
+&lt;p>2. &lt;strong>jumper 2&lt;/strong>: fixed &lt;strong>200ms&lt;/strong> trig outputs&lt;/p>
+&lt;p>3. &lt;strong>jumper 3&lt;/strong>: variable trigger outputs length – &lt;strong>quarter&lt;/strong> of input gate length&lt;/p>
+&lt;p>4. &lt;strong>jumper 4&lt;/strong>: variable trigger outputs length – &lt;strong>half&lt;/strong> of input gate length&lt;/p>
+&lt;p>5. &lt;strong>jumper 5&lt;/strong>: variable trigger outputs length – &lt;strong>equal&lt;/strong> to input gate length&lt;/p>
+&lt;p>6. &lt;strong>independent &amp;ldquo;disable&amp;rdquo; jumper&lt;/strong> (behind T1 output jack): gate outputs stays in its current state (jumper not set ) or are all switched off (jumper set) at active “disable” input signal&lt;/p>
+&lt;h2 id="circuit-design">Circuit Design
+&lt;/h2>&lt;p>It uses what looks like an ATMEL chip which probably is an ATMEGA. We can use an Arduino Nano for this module.&lt;/p>
+&lt;blockquote>
+&lt;p>We have to protect the Arduino from 10vpp levels as a safety precaution. Head on to &lt;a class="link" href="../protecting-digital-io-from-eurorack-levels/" >Protecting Digital IO From Eurorack Levels&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h3 id="eurorack-voltage-levels">Eurorack voltage levels
+&lt;/h3>&lt;ul>
+&lt;li>CV -5v to +5v, 10vpp&lt;/li>
+&lt;li>Clocks, Gates, Triggers are TTL level which is 0v to 5v (logic level)&lt;/li>
+&lt;/ul>
+&lt;p>With this in mind, additional circuitry will be needed in order to protect i/o and convert Eurorack levels to Arduino levels.&lt;/p>
+&lt;h3 id="the-modules-inputs-are-as-follows">The module’s inputs are as follows
+&lt;/h3>&lt;ul>
+&lt;li>Gate hold (disable input) input, logic level&lt;/li>
+&lt;li>Clock input, logic level&lt;/li>
+&lt;/ul>
+&lt;p>We can protect the inputs using this circuit:
+&lt;img src="https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit.png"
+width="1138"
+height="815"
+srcset="https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit_hu_c6260ed3d42f6f.png 480w, https://diysynthmnl.github.io/p/ladik-r110-clone/clock_input_circuit_hu_55c4860e7b94e933.png 1024w"
+loading="lazy"
+alt="clock_input_circuit"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="335px"
+>&lt;/p>
+&lt;h3 id="the-modules-outputs-are-as-follows">The module’s outputs are as follows
+&lt;/h3>&lt;ul>
+&lt;li>Trigger out 1/2/3&lt;/li>
+&lt;li>Gate out 1/2/3&lt;/li>
+&lt;/ul>
+&lt;p>We can have additional protection for the outputs in case the user accidentally plugs in a 10vpp voltage source, but we can worry about that later on. For now we’ll just directly connect the Arduino to the output jacks.&lt;/p>
+&lt;h2 id="how-the-module-works">How the module works
+&lt;/h2>&lt;p>Let’s start by listing the module’s i/o:&lt;/p>
+&lt;ul>
+&lt;li>Inputs
+&lt;ul>
+&lt;li>Clock input&lt;/li>
+&lt;li>Gate hold input&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Outputs
+&lt;ul>
+&lt;li>Triggers 1/2/3
+&lt;ul>
+&lt;li>Probability of firing is 1 out of 3 clock pulses&lt;/li>
+&lt;li>Can be set to a fixed value (1ms, 200ms) or variable (1/4, 1/2, 1/1, of clock input pulses) depending on the clock length by jumpers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Gates 1/2/3
+&lt;ul>
+&lt;li>Probability of firing is 1 out of 3 clock pulses&lt;/li>
+&lt;li>Gates will be the same as the clock pulse length&lt;/li>
+&lt;li>If the gate hold input is high, their current state will be held&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
